@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Мясо</title>
+    <link rel="shortcut icon" type="image/png" href="https://alfa-cube.ru/img/favicon/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif|Roboto&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="../../build/css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="../../build/css/selectize.css">
+    <link rel="stylesheet" href="../../build/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../../build/css/style.css">
+</head>
+<body class="">
+    <div class="app">
+        <div class="header-wrapper">
+            <!-- FileInjector:header -->
+        </div>
+        <div class="menu-wrapper">
+            <!-- FileInjector:menu -->
+        </div>
+        <div class="pages-wrapper">
+            <!-- FileInjector:pagesContent -->
+        </div>
+        <div class="footer-wrapper">
+            <!-- FileInjector:footer -->
+        </div>
+        <div class="pop-up-overlay-wrapper">
+            <div class="overlay-pop-up"></div>
+            <!-- FileInjector:popup -->
+        </div>
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Jquery Validate -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="../../build/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../../build/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../../build/js/selectize.js"></script>
+    <script src="../../build/js/jquery.maskedinput.min.js"></script>
+    <script src="../../build/js/pagination.js"></script>
+    <script src="../../build/js/main.js"></script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4R9PQyMDROizmuglGKqxCnsFl62st7pM"></script>
+    <!-- <script>
+        // Initialize Google map page Contact
+        function initMap() {
+            var map;
+            var mapConteiner = $('#contact-map')[0];
+
+
+            if (window.matchMedia("(max-width: 1199px)").matches) {
+              var mapCenter = { lat: 50.402728, lng: 30.568207, };
+            } else {
+              var mapCenter = { lat: 50.402639, lng: 30.573292, };
+            }
+
+            map = new google.maps.Map(mapConteiner, {
+                center: mapCenter,
+                zoom: 17,
+                // styles: [
+                //     {
+                //         "featureType": "poi",
+                //         "elementType": "labels.icon",
+                //         "stylers": [
+                //             {
+                //                 "visibility": "off"
+                //             }
+                //         ]
+                //     }
+                // ]
+            });
+
+            var image = '../../build/img/map.png';
+            var marker = new google.maps.Marker({
+                position: { lat: 50.402737, lng: 30.568342, },
+                // position: { lat: 50.402724, lng: 30.568196, },
+                map: map,
+                // icon: image,
+            });
+
+            // var marker = new mapIcons.Marker({
+            // 	map: map,
+            // 	position: new google.maps.LatLng(-27.46577, 153.02303),
+            // 	icon: {
+            // 		path: mapIcons.shapes.SQUARE_PIN,
+            // 		fillColor: '#00CCBB',
+            // 		fillOpacity: 1,
+            // 		strokeColor: '',
+            // 		strokeWeight: 0
+            // 	},
+            // 	map_icon_label: '<span class="map-icon map-icon-point-of-interest"></span>'
+            // });
+
+            var infowindow = new google.maps.InfoWindow({
+              content:"улица Стройиндустрии, 4",
+              pixelOffset: new google.maps.Size(110, 40)
+            });
+            //
+            google.maps.event.addListener(marker, 'click', function() {
+              infowindow.open(map, marker);
+            });
+            google.maps.event.addDomListener(window, 'resize', function() {
+              var latLng;
+              if (window.matchMedia("(min-width: 400px)").matches) {
+                latLng = new google.maps.LatLng(bigLat,bigLng);
+              } else {
+                latLng = new google.maps.LatLng(smallLat,smallLng);
+              }
+              map.setCenter(latLng);
+            });
+        };
+
+        initMap();
+    </script> -->
+</body>
+</html>

@@ -1,0 +1,68 @@
+footer {
+    background-color: #fff;
+}
+.footer-top {
+    padding-top: 40px;
+    padding-bottom: 80px;
+    p {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .logo {
+        & + p {
+            width: 65%;
+            margin: 16px 0;
+        }
+    }
+}
+.footer-bottom {
+    position: relative;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgba(120, 142, 161, 0.24);
+}
+.footer-contact {
+    li {
+        a {
+            display: flex;
+            align-items: center;
+            .krugal {
+                margin-right: 8px;
+            }
+            img {
+                filter: brightness(0) saturate(100%) invert(71%) sepia(14%) saturate(1515%) hue-rotate(57deg) brightness(95%) contrast(86%);
+            }
+            span {
+                line-height: 20px;
+                font-family: 'Museo Sans Cyrl 700';
+            }
+            &:hover {
+                .krugal {
+                    background-color: #75C154;
+                }
+                img {
+                    filter: brightness(0) saturate(100%) invert(93%) sepia(10%) saturate(47%) hue-rotate(173deg) brightness(103%) contrast(101%);
+                }
+            }
+        }
+        & + li {
+            margin-top: 8px;
+        }
+    }
+}
+.footer-label {
+    position: absolute;
+    top: -56px;
+    left: 50%;
+    margin-left: -112px;
+    background-color: #fff;
+    width: 224px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+        width: 160px;
+    }
+}
