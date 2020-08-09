@@ -1,0 +1,63 @@
+<div class="delivery-page pt40 pb80">
+    <div class="container">
+        <h2>Доставка и оплата</h2>
+        <div class="delivery-page-content">
+            <div class="row delivery-info">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="delivery-block">
+                        <img src="../../build/img/delivery-icon1.png" alt="">
+                        <p class="delivery-block-title">Стоимость</p>
+                        <p>Вы оплачиваете только заказ. Доставку мы осуществим бесплатно</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="delivery-block">
+                        <img src="../../build/img/delivery-icon2.png" alt="">
+                        <p class="delivery-block-title">Время доставки</p>
+                        <p>Доставка осуществляется с 12:00 до 22:00, в течение 60 минут после заказа</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="delivery-block">
+                        <img src="../../build/img/delivery-icon3.png" alt="">
+                        <p class="delivery-block-title">Заказ</p>
+                        <p>Минимальная сумма заказа составляет 200&nbsp;грн</p>
+                    </div>
+                </div>
+            </div>
+            <!-- delivery map  -->
+            <div class="delivery-map-content">
+                <p class="deli__middle-text">Проверьте, входит ли ваш адрес в зону доставки:</p>
+                <div class="deli__middle-form">
+                    <form action="#">
+                        <div class="deli__middle-input">
+                            <img src="../../build/img/icon-search.svg" alt="icon">
+                            <input type="text" name="search" placeholder="Введите ваш адрес" id="pac-input">
+                        </div>
+                        <input class="deli__middle-submit" type="submit" value="Найти">
+                    </form>
+                </div>
+                <div id="deliveryAlertFalse" class="deli__alert">
+                    <p>
+                        <span>К сожалению, ваш адрес не&nbsp;входит в&nbsp;зону доставки <img src="../../build/img/smile1.png" alt=""></span>
+                    </p>
+                </div>
+                <div id="deliveryAlertTrue" class="deli__alert green">
+                    <p>
+                        <span>Поздравляем! Ваш адрес входит в&nbsp;зону доставки <img src="../../build/img/smile2.png" alt=""></span>
+                    </p>
+                    <p>Минимальная сумма заказа - 200 грн. Время ожидания - 60 минут.</p>
+                </div>
+                <div id="deliveryAlertGreenTrue" class="deli__alert green">
+                    <p>
+                        <span>Поздравляем! Ваш адрес входит в&nbsp;зону доставки <img src="../../build/img/smile2.png" alt=""></span>
+                    </p>
+                    <p>Минимальная сумма заказа - 450 грн. Время ожидания - 90 минут.</p>
+                </div>
+                <div class="deli__map">
+                    <div class="deli__map-wrap" id="deliMap"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

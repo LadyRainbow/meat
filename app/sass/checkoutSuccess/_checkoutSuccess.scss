@@ -1,0 +1,44 @@
+.checkoutSuccess-page {
+    padding-top: 48px;
+    .plashka-total {
+        margin: 24px 0 0;
+    }
+}
+.checkoutSuccess-title {
+    margin-bottom: 24px;
+    font-size: 22px;
+    line-height: 30px;
+    color: #2E282A;
+    font-family: 'Museo Sans Cyrl 700';
+    span {
+        position: relative;
+        padding-right: 34px;
+        img {
+            position: absolute;
+            bottom: -1px;
+            right: 0;
+            width: 28px;
+            height: 28px;
+        }
+    }
+}
+.checkoutSuccess-list {
+    li {
+        display: flex;
+        align-items: flex-start;
+        p {
+            font-size: 16px;
+            line-height: 32px;
+            color: #788EA1;
+            &:last-child {
+                color: #2E282A;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+.checkoutSuccess-btn {
+    @extend %BTN;
+    width: 256px;
+    margin-top: 32px;
+}

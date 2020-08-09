@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Мясо</title>
+    <link rel="shortcut icon" type="image/png" href="https://alfa-cube.ru/img/favicon/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif|Roboto&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="../../build/css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="../../build/css/selectize.css">
+    <link rel="stylesheet" href="../../build/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../../build/css/style.css">
+</head>
+<body class="">
+    <div class="app">
+        <div class="header-wrapper">
+            <header>
+    <div class="container flex">
+        <div class="burger">
+            <span></span>
+        </div>
+        <a class="logo" href="/">
+            <img src="../../build/img/logo.png" alt="">
+        </a>
+        <ul class="header-menu">
+            <li><a href="#">Меню</a></li>
+            <li><a href="#">Акции</a></li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">О нас</a></li>
+        </ul>
+        <div class="flex">
+            <a class="header-tel flex" href="tel:+3 (067) 505 81 18">
+                <div class="krugal">
+                    <img src="../../build/img/phone.svg" alt="">
+                </div>
+                <span>+3 (067) 505 81 18</span>
+            </a>
+            <ul class="header-icons">
+                <li>
+                    <a href="#">
+                        <div class="krugal open-enter">
+                            <img src="../../build/img/user.svg" alt="">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="krugal">
+                            <img src="../../build/img/cart.svg" alt="">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+        </div>
+        <div class="menu-wrapper">
+            <div class="menu">
+    <div class="btn-menu-close"></div>
+    <div class="menu-overlay"></div>
+    <ul class="menu-content">
+        <li><a href="#">Меню</a></li>
+        <li><a href="#">Акции</a></li>
+        <li><a href="#">Доставка и оплата</a></li>
+        <li><a href="#">О нас</a></li>
+        <li>
+            <a href="#" class="open-enter-mob">
+                <img src="../../build/img/user.svg" alt="">
+                <span>войти</span>
+            </a>
+        </li>
+        <li>
+            <a class="" href="tel:+3 (067) 505 81 18">
+                <img src="../../build/img/phone2.svg" alt="">
+                <span>+3 (067) 505 81 18</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="../../build/img/cart.svg" alt="">
+                <span>корзина</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+        </div>
+        <div class="pages-wrapper">
+            <div class="card-page pt40 pb80">
+    <div class="container">
+        <h2>Корзина</h2>
+    </div>
+</div>
+
+        </div>
+        <div class="footer-wrapper">
+            <footer>
+    <div class="container">
+        <div class="footer-top">
+            <div class="row">
+                <div class="col-xl-5 col-lg-4 col-md-6 col-12">
+                    <a class="logo" href="/">
+                        <img src="../../build/img/logo.png" alt="">
+                    </a>
+                    <p>Beyond Meat® виробник інноваційних продуктів, які вже зараз називають їжею майбутнього.</p>
+                    <p>01135, м.Київ, вул. Златоустівська, буд. 16</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <ul class="footer-contact">
+                        <li>
+                            <a href="tel:+3 (067) 505 81 18">
+                                <div class="krugal">
+                                    <img src="../../build/img/phone2.svg" alt="">
+                                </div>
+                                <span>+3 (067) 505 81 18</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:beyondmeatukraine@gmail.com">
+                                <div class="krugal">
+                                    <img src="../../build/img/mail.svg" alt="">
+                                </div>
+                                <span>beyondmeatukraine@gmail.com</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                    <ul class="footer-contact">
+                        <li>
+                            <a href="https://msng.link/o/?BeyondMeatUaBot=tg" target="_blank">
+                                <div class="krugal">
+                                    <img src="../../build/img/telega.svg" alt="">
+                                </div>
+                                <span>@BeyondMeatUaBot</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/bmukraine/" target="_blank">
+                                <div class="krugal">
+                                    <img src="../../build/img/insta.svg" alt="">
+                                </div>
+                                <span>bmukraine</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-label">
+                <img src="../../build/img/label.png" alt="">
+            </div>
+            <ul class="header-menu">
+                <li><a href="#">Меню</a></li>
+                <li><a href="#">Акции</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">О нас</a></li>
+            </ul>
+            <a href="https://daykraba.com/" class="krab" target="_blank">
+                <img src="../../build/img/krab.png" alt="">
+            </a>
+        </div>
+    </div>
+</footer>
+
+        </div>
+        <div class="pop-up-overlay-wrapper">
+            <div class="overlay-pop-up"></div>
+            <div id="enter" class="pop-up-general-block">
+    <div class="pop-up-general-block-content">
+        <div class="pop-up-side left">
+            <p class="popup-title">ВОЙТИ</p>
+            <form id="valid1" action="#">
+                <div class="input-style">
+                    <p class="input-title">Введите свой email *</p>
+                    <input class="pop-up-input input-valid" type="email" data-input="email" name="email" value="">
+                    <div class="input-error-plashka">
+                        <p class="input-error-title">Ошибка!</p>
+                        <p class="input-error">Ошибка ввода</p>
+                    </div>
+                </div>
+                <div class="input-style">
+                    <p class="input-title">Пароль *</p>
+                    <input class="pop-up-input input-valid password" type="password" data-input="password" name="password" value="">
+                    <div class="input-error-plashka">
+                        <p class="input-error-title">Ошибка!</p>
+                        <p class="input-error">Ошибка ввода</p>
+                    </div>
+                    <div class="show-pass">
+                        <img src="../../build/img/eye.svg" alt="">
+                    </div>
+                </div>
+                <input class="popup-btn" type="submit" name="" value="Войти">
+                <label class="checkbox">
+                	<input type="checkbox" />
+                	<div class="checkbox__text">Запомнить меня</div>
+                </label>
+                <a href="#" class="forgot">Забыли свой пароль?</a>
+            </form>
+        </div>
+        <div class="pop-up-side right">
+            <p class="popup-title">РЕГИСТРАЦИЯ</p>
+            <form id="valid2" action="#">
+                <div class="input-style">
+                    <p class="input-title">Email *</p>
+                    <input class="pop-up-input input-valid" type="email" data-input="email" name="email" value="">
+                    <div class="input-error-plashka">
+                        <p class="input-error-title">Ошибка!</p>
+                        <p class="input-error">Ошибка ввода</p>
+                    </div>
+                </div>
+                <input class="popup-btn" type="submit" name="" value="Регистрация">
+            </form>
+        </div>
+    </div>
+    <div class="pop-up-general-block-close-btn"></div>
+</div>
+<div id="reorder" class="pop-up-general-block">
+    <div class="data-popup-wrp">
+        <p class="popup-title">ЗАКАЗ №00002</p>
+        <p class="data-popup">01.02.2020</p>
+    </div>
+    <table>
+        <tbody>
+            <tr>
+                <th>Название товара</th>
+                <th>Цена</th>
+                <th>Кол-во</th>
+                <th>Итого</th>
+            </tr>
+            <tr>
+                <td>Beyond Burger, <span class="color-gray">350 г</span></td>
+                <td>200 грн</td>
+                <td>2</td>
+                <td>400 грн</td>
+            </tr>
+            <tr>
+                <td>Beyond Salat, <span class="color-gray">350 г</span></td>
+                <td>200 грн</td>
+                <td>1</td>
+                <td>200 грн</td>
+            </tr>
+            <tr>
+                <td>Напиток Coca-Cola, <span class="color-gray">0,5 л</span></td>
+                <td>20 грн</td>
+                <td>2</td>
+                <td>40 грн</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="total-popup-line">
+        <div class="total-popup-btn">Перезаказать</div>
+        <ul class="total-popup">
+            <li>
+                <p>Итого</p>
+                <p>640 грн</p>
+            </li>
+            <li>
+                <p>Доставка</p>
+                <p>0 грн</p>
+            </li>
+        </ul>
+    </div>
+    <div class="pop-up-general-block-close-btn"></div>
+</div>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="../../build/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../../build/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../../build/js/selectize.js"></script>
+    <script src="../../build/js/jquery.maskedinput.min.js"></script>
+    <script src="../../build/js/pagination.js"></script>
+    <script src="../../build/js/main.js"></script>
+    <script type="text/javascript">
+        function validation (a) {
+            var form = $(a);
+            var url = form.attr('action');
+            var method = form.attr('method');
+            var error = 0;
+
+            $(form).find('.input-valid').each(function() {
+                    var str = $(this).val();
+                    var value = $.trim(str);
+
+                    if($(this).hasClass('optional')) {
+                        return true;
+                    } else {
+                        if(!value){
+                            $(this).closest('.input-style').addClass('error');
+                            $(this).closest('.input-style').find('.input-error').html('заполните поле');
+                            error = 1;
+                        }
+                        else {
+                            var str_length = value.length;
+                            if($(this).attr('data-input') == 'name'){
+                                if(str_length < 2 || str_length > 36){
+                                    error = 1;
+                                    $(this).closest('.input-style').addClass('error');
+                                }
+                                else {
+                                    var regex = new RegExp(/^[а-яА-ЯёЁa-zA-Z\s]*$/);
+                                    if(regex.test(value) == false) {
+                                        error = 1;
+                                        $(this).closest('.input-style').addClass('error');
+                                        $(this).closest('.input-style').find('.input-error').html('вводите только буквы');
+                                    }
+                                    else{
+                                        $(this).closest('.input-style').removeClass('error');
+                                    }
+                                }
+                            }
+                            if($(this).attr('data-input') == 'email'){
+                                if(str_length < 3 || str_length > 64){
+                                    error = 1;
+                                    $(this).closest('.input-style').addClass('error');
+                                }
+                                else {
+                                    var regex = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+                                    if(regex.test(value) == false) {
+                                        error = 1;
+                                        $(this).closest('.input-style').addClass('error');
+                                        $(this).closest('.input-style').find('.input-error').html('неверный формат email');
+                                    }
+                                    else{
+                                        $(this).closest('.input-style').removeClass('error');
+                                    }
+                                }
+                            }
+                            if($(this).attr('data-input') == 'age'){
+                                if(str_length < 1 || str_length > 3){
+                                    error = 1;
+                                    $(this).closest('.input-style').addClass('error');
+                                }
+                                else {
+                                    var regex = /^[0-9]*$/;
+                                    if(regex.test(value) == false) {
+                                        error = 1;
+                                        $(this).closest('.input-style').addClass('error');
+                                    }
+                                    else{
+                                        var age = Number(value);
+                                        if(age < 16 || age > 125){
+                                            error = 1;
+                                            $(this).closest('.input-style').addClass('error');
+                                        }
+                                        else{
+                                            $(this).closest('.input-style').removeClass('error');
+                                        }
+                                    }
+                                }
+                            }
+                            if($(this).attr('data-input') == 'count'){
+                                if(str_length < 1 || str_length > 100){
+                                    error = 1;
+                                    $(this).closest('.input-style').addClass('error');
+                                    $(this).closest('.input-style').find('.input-error').html('проверьте количество цифр');
+                                }
+                                else {
+                                    var regex = /^(?!0.*$)([0-9]{1,12})$/;
+                                    if(regex.test(value) == false) {
+                                        error = 1;
+                                        $(this).closest('.input-style').addClass('error');
+                                        $(this).closest('.input-style').find('.input-error').html('вводите только цифры');
+                                    }
+                                    else{
+                                        $(this).closest('.input-style').removeClass('error');
+                                    }
+                                }
+                            }
+                            if($(this).attr('data-input') == 'phone'){
+                                if(str_length < 6 || str_length > 20){
+                                    error = 1;
+                                    $(this).closest('.input-style').addClass('error');
+                                    $(this).closest('.input-style').find('.input-error').html('неверный формат телефона');
+                                }
+                                else {
+                                    var regex = new RegExp(/^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){6,15}(\s*)?$/);
+                                    if (regex.test(value) == false) {
+                                        $(this).closest('.input-style').addClass('error');
+                                        $(this).closest('.input-style').find('.input-error').html('неверный формат телефона');
+                                        error = 1;
+                                    }
+                                    else {
+                                      $(this).closest('.input-style').removeClass('error');
+                                    }
+                                }
+                            }
+                            if($(this).attr('data-input') == 'social_link'){
+                                if(str_length < 10 || str_length > 80){
+                                    error = 1;
+                                    $(this).closest('.input-style').addClass('error');
+                                }
+                                else {
+                                    var regex = new RegExp(/^(http|https|ftp):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/i);
+                                    if(regex.test(value) == false) {
+                                        error = 1;
+                                        $(this).closest('.input-style').addClass('error');
+                                    }
+                                    else{
+                                        $(this).closest('.input-style').removeClass('error');
+                                    }
+                                }
+                            }
+                            if($(this).attr('data-input') == 'birthday'){
+                                if(str_length !== 10){
+                                    error = 1;
+                                    $(this).closest('.input-style').addClass('error');
+                                }
+                                else {
+                                    var regex = new RegExp(/^(?:(?:31(\/|-|\.)(?:0?[13578]|1[02]))\1|(?:(?:29|30)(\/|-|\.)(?:0?[1,3-9]|1[0-2])\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:29(\/|-|\.)0?2\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\d|2[0-8])(\/|-|\.)(?:(?:0?[1-9])|(?:1[0-2]))\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$/);
+                                    if(regex.test(value) == false) {
+                                        error = 1;
+                                        $(this).closest('.input-style').addClass('error');
+                                    }
+                                    else{
+                                        $(this).closest('.input-style').removeClass('error');
+                                    }
+                                }
+                            }
+                            if($(this).attr('data-input') == 'password'){
+                                if(str_length < 8 || str_length > 20){
+                                    error = 1;
+                                    $(this).closest('.input-style').addClass('error');
+                                    $(this).closest('.input-style').find('.input-error').html('пароль должен содержить от 8 до 20 символов');
+                                }
+                                else {
+                                    var regex = new RegExp(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=(.*[a-zA-Z]){4}).{8,20}$/i);
+                                    if(regex.test(value) == false) {
+                                        error = 1;
+                                        $(this).closest('.input-style').addClass('error');
+                                        $(this).closest('.input-style').find('.input-error').html('пароль должен содержать латинские буквы и/или цифры');
+                                    }
+                                    else{
+                                        $(this).closest('.input-style').removeClass('error');
+                                    }
+                                }
+                            }
+                        }
+                    }
+               });
+            if(error) {
+                return 1
+            } else {
+                return 0;
+              };
+        };
+    </script>
+
+    <!-- map delivery -->
+    <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnergFt_fndz1kektK04V-kYW7TsPxP2A&amp;libraries=places,geometry&amp;callback=initMap&amp;city=Kiev"
+            async="" defer=""></script>
+            <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/41/8/intl/ru_ALL/common.js"></script>
+            <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/41/8/intl/ru_ALL/util.js"></script>
+            <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/41/8/intl/ru_ALL/map.js"></script>
+            <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/41/8/intl/ru_ALL/controls.js"></script>
+            <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/41/8/intl/ru_ALL/places_impl.js"></script>
+            <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/41/8/intl/ru_ALL/marker.js"></script>
+            <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/41/8/intl/ru_ALL/poly.js"></script>
+            <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/41/8/intl/ru_ALL/infowindow.js"></script>
+            <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/41/8/intl/ru_ALL/onion.js"></script>
+        <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/41/1/common.js">
+        </script>
+
+        <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/41/1/util.js">
+        </script>
+
+        <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/41/1/map.js">
+        </script>
+
+        <script type="text/javascript" charset="UTF-8"
+            src="https://maps.googleapis.com/maps-api-v3/api/js/41/1/controls.js"></script>
+
+        <script type="text/javascript" charset="UTF-8"
+            src="https://maps.googleapis.com/maps-api-v3/api/js/41/1/places_impl.js"></script>
+
+        <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/41/1/marker.js">
+        </script>
+
+        <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/41/1/poly.js">
+        </script>
+
+        <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/41/1/onion.js">
+        </script>
+
+        <script type="text/javascript" charset="UTF-8"
+            src="https://maps.googleapis.com/maps-api-v3/api/js/41/1/infowindow.js"></script>
+
+        <script>
+            jQuery('.search_page_block').submit(function (e) {
+
+                e.preventDefault();
+
+            });
+
+            var firstZoneK1 = [
+
+                [30.4550865, 50.4639383],
+                [30.4552719, 50.4597875],
+                [30.4539478, 50.4554926],
+                [30.4501357, 50.4449653],
+                [30.4608133, 50.4474962],
+                [30.4702295, 50.4465884],
+                [30.4841094, 50.4486309],
+                [30.4898711, 50.4475445],
+                [30.4961572, 50.4425839],
+                [30.4989791, 50.4409372],
+                [30.5015002, 50.4392086],
+                [30.5094612, 50.4425839],
+                [30.5140532, 50.4451256],
+                [30.5116069, 50.4500447],
+                [30.5107487, 50.4511377],
+                [30.516671, 50.452832],
+                [30.517465, 50.4535287],
+                [30.516714, 50.4547173],
+                [30.515684, 50.4557556],
+                [30.513066, 50.4564114],
+                [30.5096328, 50.4573131],
+                [30.507723, 50.458324],
+                [30.5072724, 50.4590889],
+                [30.5052983, 50.4597719],
+                [30.5038821, 50.4616571],
+                [30.5040538, 50.4630231],
+                [30.5026805, 50.4634876],
+                [30.4980134, 50.4632417],
+                [30.4966937, 50.4617664],
+                [30.4946016, 50.4617118],
+                [30.4931103, 50.4610561],
+                [30.4900634, 50.4637471],
+                [30.4841836, 50.4664925],
+                [30.4835399, 50.4666974],
+                [30.4826386, 50.4670935],
+                [30.4796346, 50.4684594],
+                [30.4776175, 50.4674145],
+                [30.4754717, 50.4657687],
+                [30.4736054, 50.4638771],
+                [30.4665463, 50.4642936],
+                [30.4607949, 50.4642186],
+                [30.4550865, 50.4639383],
+            ];
+
+
+
+            var firstZoneK2 = [
+                [30.5688357, 50.4436365],
+                [30.5873356, 50.4421464],
+                [30.590726, 50.4301596],
+                [30.5912824, 50.4218346],
+                [30.5932118, 50.4175563],
+                [30.6531218, 50.4329766],
+                [30.6581427, 50.4373225],
+                [30.6576711, 50.4440738],
+                [30.6568987, 50.4476812],
+                [30.657671, 50.4560428],
+                [30.6554407, 50.461508],
+                [30.6562117, 50.4679541],
+                [30.655247, 50.4700438],
+                [30.6470723, 50.4690739],
+                [30.6367281, 50.4829757],
+                [30.6395543, 50.4866137],
+                [30.631664, 50.4902389],
+                [30.6275003, 50.4890102],
+                [30.6247534, 50.4802447],
+                [30.617802, 50.4781968],
+                [30.6158712, 50.4809548],
+                [30.6120525, 50.4868255],
+                [30.6102921, 50.4890378],
+                [30.6080604, 50.495208],
+                [30.608016, 50.4969826],
+                [30.6015153, 50.5044754],
+                [30.5947506, 50.5031909],
+                [30.5880988, 50.5037169],
+                [30.5801824, 50.5005815],
+                [30.5767321, 50.4956447],
+                [30.5810867, 50.4935503],
+                [30.5840675, 50.4924383],
+                [30.5826473, 50.4890132],
+                [30.5830679, 50.4850026],
+                [30.5873409, 50.4796026],
+                [30.5890196, 50.4764488],
+                [30.5860258, 50.4748393],
+                [30.5705991, 50.4693812],
+                [30.5840283, 50.4528942],
+                [30.5717106, 50.448211],
+                [30.5688357, 50.4436365],
+            ];
+
+
+
+            var firstZoneK9 = [
+                [30.7066048, 50.4000087],
+                [30.6859114, 50.4171072],
+                [30.7057365, 50.4262499],
+                [30.6707059, 50.4352445],
+                [30.6315034, 50.4257976],
+                [30.5936907, 50.4150257],
+                [30.5979737, 50.4094071],
+                [30.6067279, 50.4050311],
+                [30.5995184, 50.402843],
+                [30.5943205, 50.3835014],
+                [30.6043313, 50.3841389],
+                [30.6139985, 50.383681],
+                [30.6201194, 50.3835338],
+                [30.6225073, 50.3835602],
+                [30.6472135, 50.3866892],
+                [30.6715641, 50.3900134],
+                [30.6748262, 50.3914906],
+                [30.6955647, 50.3938641],
+                [30.7066048, 50.4000087],
+            ];
+
+
+
+            var secondZone = [
+
+                [
+                    [30.4359387, 50.4857865],
+                    [30.4805707, 50.4856773],
+                    [30.4876546, 50.4804085],
+                    [30.4961101, 50.4762315],
+                    [30.5108513, 50.4743066],
+                    [30.51393, 50.4744909],
+                    [30.517352, 50.4725995],
+                    [30.521964, 50.4696894],
+                    [30.5228964, 50.4687803],
+                    [30.5237059, 50.4665775],
+                    [30.5242821, 50.4633997],
+                    [30.52457, 50.4615921],
+                    [30.5248855, 50.4601417],
+                    [30.5262448, 50.4578864],
+                    [30.5282977, 50.457305],
+                    [30.5306116, 50.4555387],
+                    [30.5327129, 50.4549286],
+                    [30.5365323, 50.4534455],
+                    [30.5452008, 50.4496748],
+                    [30.5499002, 50.447311],
+                    [30.5539983, 50.4447284],
+                    [30.544407, 50.4450977],
+                    [30.5416283, 50.4444484],
+                    [30.5388497, 50.4428698],
+                    [30.5377274, 50.4382174],
+                    [30.5385783, 50.4328275],
+                    [30.5398538, 50.4311534],
+                    [30.5366113, 50.429533],
+                    [30.5331022, 50.4297076],
+                    [30.5275332, 50.4292246],
+                    [30.5233381, 50.4291795],
+                    [30.5200008, 50.4282596],
+                    [30.5187241, 50.4275582],
+                    [30.5157308, 50.4284969],
+                    [30.5075889, 50.4240793],
+                    [30.4863213, 50.4161603],
+                    [30.4553365, 50.4186761],
+                    [30.4321622, 50.4315809],
+                    [30.4098462, 50.4414212],
+                    [30.3964573, 50.4504935],
+                    [30.3890752, 50.4576526],
+                    [30.3906202, 50.4632812],
+                    [30.3974847, 50.4745358],
+                    [30.4132794, 50.4822913],
+                    [30.4246087, 50.4860055],
+                    [30.4462384, 50.4855681],
+                ],
+                [
+                    [30.5683111, 50.4428506],
+                    [30.5669378, 50.498572],
+                    [30.5866788, 50.5312641],
+                    [30.6110548, 50.5334464],
+                    [30.6295942, 50.528427],
+                    [30.6244443, 50.4989542],
+                    [30.6457341, 50.4883612],
+                    [30.6748699, 50.4805517],
+                    [30.6787539, 50.4725215],
+                    [30.6700097, 50.470555],
+                    [30.6679983, 50.4664033],
+                    [30.6673597, 50.4624835],
+                    [30.6707303, 50.4545945],
+                    [30.6814273, 50.4587442],
+                    [30.6857295, 50.4546009],
+                    [30.6902993, 50.4524695],
+                    [30.6906476, 50.4512603],
+                    [30.6885498, 50.4500785],
+                    [30.6856662, 50.4491085],
+                    [30.6840702, 50.4480428],
+                    [30.6881093, 50.4432195],
+                    [30.6881219, 50.4416695],
+                    [30.6841865, 50.4408848],
+                    [30.6776893, 50.4391511],
+                    [30.6652111, 50.4363388],
+                    [30.6531218, 50.4329766],
+                    [30.6392072, 50.429238],
+                    [30.5909407, 50.4178701],
+                    [30.589275, 50.4287754],
+                    [30.5862354, 50.4415401],
+                    [30.5683111, 50.4428506],
+                    [30.5669378, 50.498572],
+                ],
+                [
+                    [30.5881941, 50.41612],
+                    [30.56281, 50.4350549],
+                    [30.5574023, 50.4418386],
+                    [30.5539983, 50.4447284],
+                    [30.5475299, 50.4440301],
+                    [30.5416283, 50.4444484],
+                    [30.5394636, 50.4408321],
+                    [30.5392929, 50.4371786],
+                    [30.5410114, 50.430965],
+                    [30.5326896, 50.4287603],
+                    [30.5281855, 50.4284232],
+                    [30.5235098, 50.4281953],
+                    [30.5200008, 50.4282596],
+                    [30.5161883, 50.4275812],
+                    [30.5078518, 50.4227384],
+                    [30.4975893, 50.419715],
+                    [30.4909329, 50.4163633],
+                    [30.4883342, 50.4158903],
+                    [30.4845341, 50.415308],
+                    [30.479852, 50.4154557],
+                    [30.4873611, 50.3985938],
+                    [30.4864815, 50.3930406],
+                    [30.4865462, 50.3886366],
+                    [30.4884771, 50.3869949],
+                    [30.4983047, 50.3876515],
+                    [30.5115653, 50.388719],
+                    [30.5267142, 50.3884175],
+                    [30.5627624, 50.3999079],
+                    [30.591601, 50.3794421],
+                    [30.607051, 50.3724914],
+                    [30.6143458, 50.3758843],
+                    [30.6137017, 50.3783885],
+                    [30.6130364, 50.380571],
+                    [30.6164909, 50.3807831],
+                    [30.6218118, 50.381796],
+                    [30.6443001, 50.3838207],
+                    [30.6612724, 50.3855319],
+                    [30.6773871, 50.3879002],
+                    [30.7061819, 50.3759962],
+                    [30.7184564, 50.3817409],
+                    [30.7158816, 50.4086607],
+                    [30.7253664, 50.4128855],
+                    [30.7242515, 50.4163517],
+                    [30.7200029, 50.4186417],
+                    [30.7145528, 50.4240696],
+                    [30.7040372, 50.4270908],
+                    [30.6939717, 50.4428216],
+                    [30.5881941, 50.41612],
+                ]
+            ];
+
+            function _initMap() {
+
+                // Initialize Google Map
+
+                var latlng = new google.maps.LatLng(50.4488824, 30.457254199999966);
+
+                var map = new google.maps.Map(jQuery('#deliMap')[0], {
+
+                    center: latlng,
+
+                    zoom: 12
+
+                });
+
+
+
+                var card = document.getElementById('pac-card');
+
+                var input = document.getElementById('pac-input') || document.getElementById('billing_address_1');
+
+
+
+                map.controls[google.maps.ControlPosition.TOP_RIGHT].push(card);
+
+
+
+                var autocomplete = new google.maps.places.Autocomplete(input, {
+
+                    types: [],
+
+                    componentRestrictions: {
+
+                        country: 'UA'
+
+                    }
+
+                });
+
+
+
+                /* Bind the map's bounds (viewport) property to the autocomplete object,
+
+                       so that the autocomplete requests use the current map bounds for the
+
+                       bounds option in the request. */
+
+                autocomplete.bindTo('bounds', map);
+
+
+
+                var infowindow = new google.maps.InfoWindow();
+
+                var infowindowContent = document.getElementById('infowindow-content');
+
+
+
+                infowindow.setContent(infowindowContent);
+
+
+
+                var marker = new google.maps.Marker({
+
+                    map: map,
+
+                    anchorPoint: new google.maps.Point(0, -29)
+
+                });
+
+
+
+                // Add polygon to map
+
+                // map.data.add({ geometry: new google.maps.Data.Polygon([outerCoords]) });
+
+
+
+                var data = [];
+
+                var secondZonePolygon = [];
+
+
+
+                for (var i = 0; i < secondZone.length; i++) {
+
+                    data = [];
+
+
+
+                    for (var j = 0; j < secondZone[i].length; j++) {
+
+                        data.push(new google.maps.LatLng(secondZone[i][j][1], secondZone[i][j][0]));
+
+                    }
+
+
+
+                    secondZonePolygon.push(
+
+                        new google.maps.Polygon({
+
+                            paths: data,
+
+                            strokeColor: '#FF0000',
+
+                            strokeOpacity: 0.4,
+
+                            strokeWeight: 2,
+
+                            fillColor: '#FF0000',
+
+                            fillOpacity: 0.05
+
+                        })
+
+                    );
+                    secondZonePolygon[i].setMap(map);
+                };
+
+                data = [];
+
+
+
+                for (var i = 0; i < firstZoneK1.length; i++) {
+
+                    data.push(new google.maps.LatLng(firstZoneK1[i][1], firstZoneK1[i][0]));
+
+                }
+
+
+
+                var firstZoneK1Polygon = new google.maps.Polygon({
+
+                    paths: data,
+
+                    strokeColor: '#00FF00',
+
+                    strokeOpacity: 0.4,
+
+                    strokeWeight: 2,
+
+                    fillColor: '#00FF00',
+
+                    fillOpacity: 0.5
+
+                });
+
+
+
+                firstZoneK1Polygon.setMap(map);
+
+
+
+                data = [];
+
+
+
+                for (var i = 0; i < firstZoneK2.length; i++) {
+
+                    data.push(new google.maps.LatLng(firstZoneK2[i][1], firstZoneK2[i][0]));
+
+                }
+
+
+
+                var firstZoneK2Polygon = new google.maps.Polygon({
+
+                    paths: data,
+
+                    strokeColor: '#00FF00',
+
+                    strokeOpacity: 0.4,
+
+                    strokeWeight: 2,
+
+                    fillColor: '#00FF00',
+
+                    fillOpacity: 0.5
+
+                });
+
+
+
+                firstZoneK2Polygon.setMap(map);
+
+
+
+                data = [];
+
+
+
+                for (var i = 0; i < firstZoneK9.length; i++) {
+
+                    data.push(new google.maps.LatLng(firstZoneK9[i][1], firstZoneK9[i][0]));
+
+                }
+
+
+
+                var firstZoneK9Polygon = new google.maps.Polygon({
+
+                    paths: data,
+
+                    strokeColor: '#00FF00',
+
+                    strokeOpacity: 0.4,
+
+                    strokeWeight: 2,
+
+                    fillColor: '#00FF00',
+
+                    fillOpacity: 0.5
+
+                });
+
+
+
+                firstZoneK9Polygon.setMap(map);
+
+
+
+                jQuery('#deliveryAlertFalse').hide();
+
+                jQuery('#deliveryAlertTrue').hide();
+
+                jQuery('#deliveryAlertGreenTrue').hide();
+
+
+
+
+
+                function handlePlace(place) {
+
+                    if (!place.geometry) {
+
+                        window.alert("No details available for input: '" + place.name + "'");
+
+                        return;
+
+                    }
+
+
+
+                    // If the place has a geometry, then present it on a map.
+
+                    if (place.geometry.viewport) {
+
+                        map.fitBounds(place.geometry.viewport);
+
+                    } else {
+
+                        map.setCenter(place.geometry.location);
+
+                        map.setZoom(17); // Why 17? Because it looks good.
+
+                    }
+
+
+
+                    marker.setPosition(place.geometry.location);
+
+                    marker.setVisible(true);
+
+
+
+                    // var address = '';
+
+                    // if (place.address_components) {
+
+                    //     address = [
+
+                    //         (place.address_components[0] && place.address_components[0].short_name || ''),
+
+                    //         (place.address_components[1] && place.address_components[1].short_name || ''),
+
+                    //         (place.address_components[2] && place.address_components[2].short_name || '')
+
+                    //     ].join(' ');
+
+                    // }
+
+
+
+                    // infowindowContent.children['place-icon'].src = place.icon;
+
+                    // infowindowContent.children['place-name'].textContent = place.name;
+
+                    // infowindowContent.children['place-address'].textContent = address;
+
+                    // infowindow.open(map, marker);
+
+
+
+                    var isInK1 = google.maps.geometry.poly.containsLocation(
+
+                        new google.maps.LatLng(
+
+                            place.geometry.location.lat(),
+
+                            place.geometry.location.lng()
+
+                        ), firstZoneK1Polygon
+
+                    );
+
+
+
+                    var isInK2 = google.maps.geometry.poly.containsLocation(
+
+                        new google.maps.LatLng(
+
+                            place.geometry.location.lat(),
+
+                            place.geometry.location.lng()
+
+                        ), firstZoneK2Polygon
+
+                    );
+
+
+
+                    var isInK9 = google.maps.geometry.poly.containsLocation(
+
+                        new google.maps.LatLng(
+
+                            place.geometry.location.lat(),
+
+                            place.geometry.location.lng()
+
+                        ), firstZoneK9Polygon
+
+                    );
+
+
+
+                    var isInSecondOne = google.maps.geometry.poly.containsLocation(
+
+                        new google.maps.LatLng(
+
+                            place.geometry.location.lat(),
+
+                            place.geometry.location.lng()
+
+                        ), secondZonePolygon[0]
+
+                    );
+
+
+
+                    // var isInSecondTro = google.maps.geometry.poly.containsLocation(
+
+                    //     new google.maps.LatLng(
+
+                    //         place.geometry.location.lat(),
+
+                    //         place.geometry.location.lng()
+
+                    //     ), secondZonePolygon[1]
+
+                    // );
+
+
+
+                    // var isInSecondThree = google.maps.geometry.poly.containsLocation(
+
+                    //     new google.maps.LatLng(
+
+                    //         place.geometry.location.lat(),
+
+                    //         place.geometry.location.lng()
+
+                    //     ), secondZonePolygon[2]
+
+                    // );
+
+
+
+                    if (isInK1 || isInK2 || isInK9 || isInSecondOne /*|| isInSecondTro || isInSecondThree*/ ) {
+
+                        jQuery('#deliveryAlertFalse').hide();
+
+
+
+                        if (isInK1 || isInK2 || isInK9) {
+
+                            jQuery('#deliveryAlertGreenTrue').show();
+
+                            jQuery('#deliveryAlertTrue').hide();
+
+                        } else {
+
+                            jQuery('#deliveryAlertTrue').show();
+
+                            jQuery('#deliveryAlertGreenTrue').hide();
+
+                        }
+
+
+
+                        jQuery('.billing_error').hide();
+
+
+
+                        jQuery('.billing_confirm').hide();
+
+
+
+                        jQuery('#billing_address_1').parent().append(
+                            '<span class="billing_confirm">Чудово! Ваша адреса входить в зону доставки.</span>');
+
+                        jQuery("#place_order").attr('disabled', false);
+
+                    } else {
+
+                        jQuery('#deliveryAlertTrue').hide();
+
+                        jQuery('#deliveryAlertGreenTrue').hide();
+
+                        jQuery('#deliveryAlertFalse').show();
+
+                        jQuery('.billing_confirm').hide();
+
+
+
+                        jQuery('.billing_error').hide();
+
+
+
+                        jQuery('#billing_address_1').parent().append(
+                            '<span class="billing_error">Нажаль, на даний момент, ця адреса не входить в нашу зону доставки.</span>'
+                        );
+
+                        jQuery("#place_order").attr('disabled', true);
+
+                    }
+
+
+
+                    if (typeof check_zone === 'function') {
+
+                        check_zone(isInK1 || isInK2 || isInK9, isInSecondOne /*|| isInSecondTro || isInSecondThree*/ );
+
+                    }
+
+
+
+                    var event = new CustomEvent('change_address', {
+                        detail: {
+                            reg1: isInK1,
+                            reg2: isInK2,
+                            reg3: isInK9,
+                            reg4: isInSecondOne /*, reg5: isInSecondTro, reg6: isInSecondThree*/
+                        }
+                    });
+
+                    document.dispatchEvent(event);
+
+                }
+
+
+
+                autocomplete.addListener('place_changed', function () {
+
+
+
+                    infowindow.close();
+
+
+
+                    marker.setVisible(false);
+
+
+
+                    var place = autocomplete.getPlace();
+
+
+
+                    handlePlace(place);
+
+                    // console.log(isWithinPolygon);
+
+                });
+
+
+
+                autocomplete.setTypes(['all']);
+
+                autocomplete.setOptions({
+                    strictBounds: this.checked
+                });
+
+
+
+                if (input && input.value.length) {
+
+                    var placesService = new google.maps.places.PlacesService(map);
+
+
+
+                    var displaySuggestions = function (predictions, status) {
+
+                        if (status != google.maps.places.PlacesServiceStatus.OK) {
+
+                            return;
+
+                        }
+
+
+
+                        if (predictions.length) {
+
+                            placesService.getDetails({
+                                placeId: predictions[0].place_id
+                            }, function (place) {
+
+                                handlePlace(place);
+
+                            });
+
+                        }
+
+
+
+                        // predictions.forEach(function(prediction) {
+
+                        //   var li = document.createElement('li');
+
+                        //   li.appendChild(document.createTextNode(prediction.description));
+
+                        //   document.getElementById('results').appendChild(li);
+
+                        // });
+
+                    };
+
+
+
+                    var service = new google.maps.places.AutocompleteService();
+
+
+
+                    service.getQueryPredictions({
+                        input: input.value
+                    }, displaySuggestions);
+
+
+
+                }
+
+            }
+
+
+
+            function initMap() {
+
+                var counter = 0;
+
+                var f = function () {
+
+                    if (document.getElementById('deliMap')) {
+
+                        console.log('done');
+
+                        _initMap();
+
+                    } else {
+
+                        if (counter > 20) {
+
+                            return;
+
+                        }
+
+                        console.log('wait..');
+
+                        //setTimeout(f, 500);
+
+                    }
+
+                };
+
+                f();
+
+            }
+        </script>
+</body>
+</html>

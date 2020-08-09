@@ -147,9 +147,6 @@
     z-index: 2;
     padding-top: 40px;
     padding-bottom: 48px;
-    h2 {
-        margin-bottom: 16px;
-    }
 }
 .carte-wrp {
     background-color: #E8F0F5;
@@ -198,7 +195,9 @@
     cursor: pointer;
     display: flex;
     flex-direction: column;
+    transition: .2s;
     &:hover {
+        box-shadow: none;
         .dish-title {
             color: #75C154;
         }

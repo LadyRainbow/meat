@@ -1,0 +1,219 @@
+<div class="checkout-page pt40 pb80">
+    <div class="container">
+        <h2>Оформление заказа</h2>
+        <div class="checkout-page-content">
+            <p>Уже покупали? <span class="open-enter">Нажмите для авторизации</span></p>
+            <p>У вас есть купон? <span class="open-kupon">Нажмите здесь для введения кода</span></p>
+            <form id="valid10" action="#">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <div class="kupon-wrp">
+                            <div class="form-kupon">
+                                <div class="input-style">
+                                    <input class="pop-up-input input-valid" type="text" name="name" placeholder="Код купона">
+                                    <div class="input-error-plashka">
+                                        <p class="input-error-title">Ошибка!</p>
+                                        <p class="input-error">Ошибка ввода</p>
+                                    </div>
+                                </div>
+                                <input class="kupon-btn" type="submit" name="" value="Применить купон">
+                            </div>
+                        </div>
+                        <div class="checkout-tabs-wrp">
+                            <ul class="checkout-tabs">
+                                <li class="active" data-tab="delivery">Доставка</li>
+                                <li data-tab="takeaway">Takeaway</li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-6 col-12">
+                                <div class="input-style">
+                                    <p class="input-title">Имя *</p>
+                                    <input class="pop-up-input input-valid" type="text" data-input="name" name="name" value="">
+                                    <div class="input-error-plashka">
+                                        <p class="input-error-title">Ошибка!</p>
+                                        <p class="input-error">Ошибка ввода</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-12">
+                                <div class="input-style">
+                                    <p class="input-title">Телефон *</p>
+                                    <input class="pop-up-input input-valid mask-phone" type="tel" data-input="phone" name="phone" value="">
+                                    <div class="input-error-plashka">
+                                        <p class="input-error-title">Ошибка!</p>
+                                        <p class="input-error">Ошибка ввода</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-style">
+                            <p class="input-title">E-mail *</p>
+                            <input class="pop-up-input input-valid" type="email" data-input="email" name="email" value="">
+                            <div class="input-error-plashka">
+                                <p class="input-error-title">Ошибка!</p>
+                                <p class="input-error">Ошибка ввода</p>
+                            </div>
+                        </div>
+                        <div id="delivery" class="checkout-body active">
+                            <div class="input-style">
+                                <p class="input-title">Адрес доставки *</p>
+                                <input class="pop-up-input input-valid" type="text" data-input="name" name="name" value="">
+                                <div class="input-error-plashka">
+                                    <p class="input-error-title">Ошибка!</p>
+                                    <p class="input-error">Ошибка ввода</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-4 col-12">
+                                    <div class="input-style">
+                                        <p class="input-title">Дом *</p>
+                                        <input class="pop-up-input" type="text" data-input="name" name="name" required>
+                                        <div class="input-error-plashka">
+                                            <p class="input-error-title">Ошибка!</p>
+                                            <p class="input-error">Ошибка ввода</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-12">
+                                    <div class="input-style">
+                                        <p class="input-title">Подъезд</p>
+                                        <input class="pop-up-input" type="text" data-input="name" name="name">
+                                        <div class="input-error-plashka">
+                                            <p class="input-error-title">Ошибка!</p>
+                                            <p class="input-error">Ошибка ввода</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-12">
+                                    <div class="input-style">
+                                        <p class="input-title">Квартира</p>
+                                        <input class="pop-up-input" type="text" data-input="name" name="name">
+                                        <div class="input-error-plashka">
+                                            <p class="input-error-title">Ошибка!</p>
+                                            <p class="input-error">Ошибка ввода</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 col-12">
+                                    <div class="input-style">
+                                        <p class="input-title">Код на дверях</p>
+                                        <input class="pop-up-input" type="text" data-input="name" name="name">
+                                        <div class="input-error-plashka">
+                                            <p class="input-error-title">Ошибка!</p>
+                                            <p class="input-error">Ошибка ввода</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-12 checkbox-checkout-wrp checkbox-checkout-delivery">
+                                    <label class="checkbox">
+                                        <input type="checkbox" />
+                                        <div class="checkbox__text">Зарегистрировать вас?</div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="takeaway" class="checkout-body">
+                            <div class="input-style">
+                                <p class="input-title">Адрес ресторана</p>
+                                <div class="select-wrp">
+                                    <select class="" name="">
+                                        <option value="1">ул. Пушкинская, 23</option>
+                                        <option value="2">ул. Адрес, 123</option>
+                                        <option value="3">ул. Примечание, 43</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="input-style">
+                                <p class="input-title">Время</p>
+                                <div class="select-wrp">
+                                    <select class="" name="">
+                                        <option value="1">12:00 – 12:30</option>
+                                        <option value="2">13:00 – 13:30</option>
+                                        <option value="3">14:00 – 14:30</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 checkbox-checkout-wrp">
+                                    <label class="checkbox">
+                                        <input type="checkbox" />
+                                        <div class="checkbox__text">Зарегистрировать вас?</div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-style">
+                            <p class="input-title">Примечание к заказу</p>
+                            <textarea name="name" placeholder="Например, особые пожелания отделу доставки"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="plashka-order">
+                            <p class="popup-title">ВАШ ЗАКАЗ</p>
+                            <div class="plashka-table">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <th>Товар</th>
+                                            <th>Кол-во</th>
+                                            <th>Всего</th>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">Салат Beyond</a></td>
+                                            <td>x2</td>
+                                            <td>220 грн</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">Beyond Burger </a></td>
+                                            <td>x1</td>
+                                            <td>220 грн</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">Напиток Coca-Cola 0,5</a></td>
+                                            <td>x2</td>
+                                            <td>220 грн</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <ul class="plashka-total">
+                                <li>
+                                    <p>Сумма</p>
+                                    <p>380 грн</p>
+                                </li>
+                                <li>
+                                    <p>Доставка</p>
+                                    <p>Бесплатно</p>
+                                </li>
+                                <li>
+                                    <p>Всего</p>
+                                    <p>380 грн</p>
+                                </li>
+                            </ul>
+                            <div id="delivery1" class="checkout-body active">
+                                <label class="radio">
+                                    <input type="radio" name="pay" checked/>
+                                    <div class="radio__text">Оплата наличными</div>
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" name="pay"/>
+                                    <div class="radio__text">Оплата картой курьеру</div>
+                                </label>
+                            </div>
+                            <div id="takeaway1" class="checkout-body">
+                                <label class="radio">
+                                    <input type="radio" name="pay2" checked/>
+                                    <div class="radio__text">Оплата наличными</div>
+                                </label>
+                            </div>
+                            <input class="do-order-btn" type="submit" name="" value="Подтвердить заказ">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

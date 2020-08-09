@@ -1,0 +1,234 @@
+.lk-page {
+    padding-top: 48px;
+    .container {
+        position: relative;
+    }
+}
+.profil-change-success {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    span {
+        color: #000000;
+        position: relative;
+        padding-right: 30px;
+        img {
+            position: absolute;
+            bottom: -1px;
+            right: 0;
+            width: 20px;
+            height: 20px;
+        }
+    }
+    &.success {
+        display: block;
+    }
+}
+.lk-title {
+    font-size: 22px;
+    line-height: 30px;
+    color: #2E282A;
+    font-family: 'Museo Sans Cyrl 700';
+    margin-bottom: 16px;
+}
+.lk-content {
+    padding-top: 24px;
+    border-top: 1px solid rgba(120, 142, 161, 0.24);
+}
+.lk-tabs-wrp {
+    border-radius: 20px;
+    border: 1px solid rgba(120, 142, 161, 0.24);
+    overflow: hidden;
+}
+.lk-tabs {
+    li {
+        display: flex;
+        padding: 16px 24px;
+        align-items: center;
+        background-color: #fff;
+        cursor: pointer;
+        img {
+            width: 28px;
+            margin-right: 16px;
+        }
+        p {
+            font-size: 14px;
+            line-height: 18px;
+            color: #2E282A;
+            font-family: 'Museo Sans Cyrl 700';
+        }
+        & + li {
+            border-top: 1px solid rgba(120, 142, 161, 0.24);
+        }
+        &.active {
+            background-color: #F7FAFC;
+        }
+    }
+}
+span.lk-tab-btn {
+    color: #2E282A;
+    cursor: pointer;
+    transition: .2s;
+    &:hover {
+        color: #E4582C;
+    }
+}
+.text-empty {
+    display: none;
+}
+.lk-body {
+    display: none;
+    &.active {
+        display: block;
+    }
+    &.order-empty {
+        .text-empty {
+            display: block;
+        }
+        table {
+            display: none;
+        }
+    }
+}
+table {
+    width: 100%;
+    color: #2E282A;
+    tr {
+        border-top: 1px solid rgba(120, 142, 161, 0.12);
+        .color-gray {
+            color: $text;
+        }
+        .color-green {
+            color: #75C154;
+        }
+        .reorder-btn {
+            cursor: pointer;
+            &:hover {
+                color: darken(#75C154, 10%);
+            }
+        }
+        &:first-child {
+            border: none;
+        }
+    }
+    th {
+        font-weight: normal;
+        color: $text;
+        padding: 0 10px 16px 10px;
+        white-space: nowrap;
+        &:first-child {
+            padding: 0 10px 16px 0;
+        }
+    }
+    td {
+        padding: 16px 10px;
+        &:first-child {
+            padding: 16px 0;
+        }
+    }
+}
+
+// address
+.redact-address-btn, .redact-pass-btn, .redact-profil-btn {
+    @extend %BTN;
+    height: 38px;
+    width: fit-content;
+    margin-top: 24px;
+    &.big {
+        height: 50px;
+        width: 256px;
+        margin-top: 16px;
+    }
+}
+.lk-address-body {
+    display: none;
+    .popup-title {
+        margin-bottom: 16px;
+    }
+    & > p {
+        margin-bottom: 24px;
+    }
+    &.active {
+        display: block;
+    }
+}
+.address-info {
+    li {
+        line-height: 32px;
+        display: flex;
+        align-items: center;
+        p {
+            &:first-child {
+                width: 40%;
+            }
+            &:last-child {
+                color: #2E282A;
+            }
+        }
+    }
+}
+.address-row {
+    .col-12 {
+        margin-bottom: 24px;
+        .pop-up-input {
+            width: 100%;
+        }
+    }
+}
+// profil
+.lk-profil-body {
+    display: none;
+    .popup-title {
+        margin-bottom: 16px;
+    }
+    &.active {
+        display: block;
+    }
+
+}
+#lkProfile {
+    .pop-up-input {
+        width: 100%;
+    }
+}
+// media
+@media (max-width: 1199px) {
+    .lk-body {
+        table {
+            display: block;
+            overflow-x: auto;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .lk-body {
+        padding-top: 40px;
+    }
+    .redact-address-btn.big {
+        width: 100%;
+    }
+    #savedAddress {
+        .col-12 + .col-12 {
+            margin-top: 50px;
+        }
+    }
+    .mt50 {
+        margin-top: 50px;
+    }
+    .address-info li p:first-child {
+        width: 50%;
+    }
+    .changed-pass-block {
+        .redact-pass-btn {
+            width: 100%;
+            height: 50px;
+        }
+    }
+    .profil-change-success {
+        top: -30px;
+        left: 15px;
+        right: inherit;
+        font-size: 14px;
+    }
+}

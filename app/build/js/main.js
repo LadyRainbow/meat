@@ -54,7 +54,6 @@ $(document).ready(function () {
             $('.menu').removeClass('active');
             $('body').removeClass('active');
         }, 200);
-
     });
     $('.menu-overlay').click(function () {
         $('.menu-content').removeClass('active');
@@ -103,6 +102,38 @@ $(document).ready(function () {
      $('.main-text.first').addClass('line');
      $('.img-main').addClass('show');
 
+     // 3 block
+     $('.about-slider-nav').slick({
+         slidesToShow: 3,
+         slidesToScroll: 3,
+         verticalSwiping: true,
+         vertical: true,
+         arrows: false,
+         dots: false,
+         asNavFor: '.about-slider-main',
+         focusOnSelect: true,
+         swipe: false
+     });
+     $('.about-slider-main').slick({
+         slidesToShow: 1,
+         slidesToScroll: 1,
+         prevArrow: $('.prev-about-arrow'),
+         nextArrow: $('.next-about-arrow'),
+         fade: true,
+         dots: true,
+         appendDots: '.about-dots-wrp',
+         asNavFor: '.about-slider-nav',
+         adaptiveHeight: true
+     });
+
+
+    // show/hide password
+    $('.show-pass').click(function(){
+        var $thisField = $(this).siblings($('input'));
+        var type = $thisField.attr('type') == "text" ? "password" : 'text';
+        $(this).toggleClass('open-eye');
+        $thisField.attr('type', type);
+    });
 
     // only number
     $(".input-number").keypress(function(event){
@@ -112,23 +143,84 @@ $(document).ready(function () {
     });
 
     // masked
-    $('.mask-phone').mask('+380 (99)999-99-99');
+    $('.mask-phone').mask('+999999?9999999999', {placeholder:""});
 
+    // lk
+    $('.lk-tab-btn').click(function (e) {
+        e.preventDefault();
+        $('.lk-tab-btn').removeClass('active');
+        var idBlockContent = $(this).attr('data-tab');
+        $(".lk-tab-btn[data-tab='" + idBlockContent + "']").addClass('active');
+        $('.lk-body').removeClass('active');
+        $('#' + idBlockContent + '').addClass('active');
+        // if($(this).hasClass('exit')) {
+        //     setTimeout(function () {
+        //         window.location.href = "http://stackoverflow.com";
+        //     }, 5000);
+        // }
+    });
+    // address
+    $('.redact-address-btn').click(function () {
+        var idBlockContent = $(this).attr('data-tab');
+        $('.lk-address-body').removeClass('active');
+        $('#' + idBlockContent + '').addClass('active');
+    });
+    // profil
+    // $('.redact-profil-btn').click(function () {
+    //     var idBlockContent = $(this).attr('data-tab');
+    //     $('.lk-profil-body').removeClass('active');
+    //     $('#' + idBlockContent + '').addClass('active');
+    // });
+
+    // checkout
+    $('.checkout-tabs li').click(function () {
+        $('.checkout-tabs li').removeClass('active');
+        $(this).addClass('active');
+        var idBlockContent = $(this).attr('data-tab');
+        $('.checkout-body').removeClass('active');
+        $('#' + idBlockContent + '').addClass('active');
+        $('#' + idBlockContent + '1').addClass('active');
+    });
+
+    // kupon
+    $('.open-kupon').click(function () {
+        $(this).toggleClass('active');
+        $('.kupon-wrp').toggleClass('active');
+    });
 
 
     // pop-ups
+    function openEnterRegistr () {
+        $overlayPopUpWRP.addClass('active');
+        $('body, html').addClass('active');
+        $popUpGeneralBlock.removeClass('active');
+        $('#enter').addClass('active');
+    };
+
+    $('.open-enter-mob').click(function () {
+        $('.menu-content').removeClass('active');
+        $('.btn-menu-close').removeClass('active');
+        $('.menu').removeClass('active');
+        openEnterRegistr ();
+    });
+    $('.open-enter').click(function () {
+        openEnterRegistr ();
+    });
+    $('.reorder-btn').click(function () {
+        $overlayPopUpWRP.addClass('active');
+        $('body, html').addClass('active');
+        $popUpGeneralBlock.removeClass('active');
+        $('#reorder').addClass('active');
+    });
+
     $overlay.click(function () {
         $overlayPopUpWRP.removeClass('active');
         $('body, html').removeClass('active');
         $popUpGeneralBlock.removeClass('active');
-        $popUpFilterMob.removeClass('active');
-        $popupServicesNavMob.removeClass('active');
     });
     $closePopUpBtn.click(function () {
         $overlayPopUpWRP.removeClass('active');
         $('body, html').removeClass('active');
         $popUpGeneralBlock.removeClass('active');
-        $popUpFilterMob.removeClass('active');
-        $popupServicesNavMob.removeClass('active');
     });
 });

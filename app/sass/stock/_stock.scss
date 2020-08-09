@@ -1,0 +1,66 @@
+.stock-page {
+    padding-top: 40px;
+}
+.stock-content {
+    border-top: 1px solid rgba(120, 142, 161, 0.24);
+}
+.stock-block {
+    padding: 32px 0;
+    border-bottom: 1px solid rgba(120, 142, 161, 0.24);
+}
+.stock-img {
+    position: relative;
+    width: 100%;
+    height: 264px;
+    border-radius: 20px;
+    overflow: hidden;
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+.stock-info {
+    padding: 16px 0;
+}
+.stock-title {
+    font-size: 22px;
+    line-height: 30px;
+    color: #E4582C;
+    font-family: 'Museo Sans Cyrl 700';
+    margin-bottom: 4px;
+}
+.stock-text {
+    color: #2E282A;
+    margin-top: 24px;
+}
+.stock-condition {
+    margin-top: 24px;
+    li {
+        position: relative;
+        padding-left: 14px;
+        font-size: 14px;
+        line-height: 21px;
+        &::before {
+            content: '*';
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .stock-info {
+        padding: 20px 0 0 0;
+    }
+    .stock-condition {
+        margin-top: 18px;
+    }
+    .stock-text {
+        margin-top: 18px;
+    }
+}

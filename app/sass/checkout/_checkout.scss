@@ -1,0 +1,247 @@
+.checkout-page {
+    .pop-up-input {
+        width: 100%;
+    }
+    .input-style {
+        margin-top: 24px;
+    }
+}
+.checkout-page-content {
+    padding-top: 32px;
+    border-top: 1px solid rgba(120, 142, 161, 0.24);
+    & > p {
+        span {
+            color: #75C154;
+            cursor: pointer;
+            transition: .2s;
+            &.active {
+                color: #E4582C;
+                &:hover {
+                    color: lighten(#E4582C, 5%);
+                }
+            }
+            &:hover {
+                color: darken(#75C154, 10%);
+            }
+        }
+        & + p {
+            margin-top: 8px;
+            margin-bottom: 32px;
+        }
+    }
+}
+.checkout-tabs-wrp{
+    background-color: #E8F0F5;
+    border-radius: 10px;
+    padding: 6px 16px;
+    display: flex;
+    align-items: center;
+}
+.checkout-tabs {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    li {
+        padding: 11px 20px 10px;
+        font-size: 14px;
+        line-height: 17px;
+        color: #788EA1;
+        font-family: 'Museo Sans Cyrl 700';
+        transition: .2s;
+        background-color: rgba(255, 255, 255, 0.01);
+        border-radius: 6px;
+        cursor: pointer;
+        &.active {
+            background-color: #fff;
+            color: #75C154;
+            box-shadow: 0px 4px 10px rgba(54, 78, 101, 0.1);
+        }
+        &:hover {
+            color: #75C154;
+        }
+    }
+}
+.checkbox-checkout-wrp {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    &.checkbox-checkout-delivery {
+        padding-top: 54px;
+    }
+}
+textarea {
+    width: 100%;
+    height: 86px;
+    padding: 16px;
+    background-color: #fff;
+    border: 1px solid rgba(120, 142, 161, 0.24);
+    font-size: 14px;
+    line-height: 18px;
+    color: #2E282A;
+    font-family: 'Museo Sans Cyrl 700';
+    border-radius: 6px;
+    &::placeholder {
+        font-size: 14px;
+        line-height: 18px;
+        color: rgba(120, 142, 161, 0.64);
+        font-family: 'Museo Sans Cyrl 700';
+    }
+}
+.select-wrp {
+    position: relative;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    &::after {
+        position: absolute;
+        z-index: 1;
+        top: 23px;
+        right: 21px;
+        content: '';
+        width: 0;
+    	height: 0;
+    	border-left: 6px solid transparent;
+    	border-right: 6px solid transparent;
+    	border-top: 6px solid #788EA1;
+    }
+}
+select {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    background: rgba(120, 142, 161, 0.01);
+    border: 1px solid rgba(120, 142, 161, 0.24);
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #2E282A;
+    padding: 16px 43px 16px 16px;
+    font-family: 'Museo Sans Cyrl 700';
+    &:focus {
+        border-color: #75C154;
+    }
+}
+.checkout-body {
+    display: none;
+    &.active {
+        display: block;
+    }
+}
+.kupon-wrp {
+    display: none;
+    border: 2px dotted rgba(228, 88, 44, 0.8);
+    border-radius: 20px;
+    margin-bottom: 32px;
+    padding: 24px;
+    .form-kupon {
+        display: flex;
+        .input-style {
+            margin-top: 0;
+            .pop-up-input {
+                width: 328px;
+            }
+        }
+    }
+    &.active {
+        display: block;
+    }
+}
+.kupon-btn {
+    @extend %BTN;
+    width: 232px;
+    margin-left: -64px;
+    position: relative;
+    z-index: 2;
+}
+.plashka-order {
+    background-color: #fff;
+    padding: 40px 32px;
+    border-radius: 20px;
+    table {
+        td {
+            padding: 8px 10px;
+            &:first-child {
+                padding: 8px 0;
+            }
+        }
+        tr {
+            border: none;
+            &:first-child {
+                border-bottom: 1px solid rgba(120, 142, 161, 0.12);
+                & + tr {
+                    td {
+                        padding: 24px 10px 8px 10px;
+                        &:first-child {
+                            padding: 24px 10px 8px 0px;
+                        }
+                    }
+                }
+            }
+        }
+        a {
+            transition: .2s;
+            &:hover {
+                color: #75C154;
+            }
+        }
+    }
+    label {
+        display: block;
+        width: fit-content;
+        & + label {
+            margin-top: 8px;
+        }
+    }
+}
+.do-order-btn {
+    @extend %BTN;
+    width: 100%;
+    margin-top: 32px;
+}
+.plashka-table {
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(120, 142, 161, 0.12);
+}
+.plashka-total {
+    margin: 24px 0;
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p {
+            color: #2E282A;
+            &:first-child {
+                font-family: 'Museo Sans Cyrl 700';
+            }
+        }
+        & + li {
+            margin-top: 8px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .kupon-wrp {
+        .form-kupon {
+            display: block;
+            .input-style {
+                margin-top: 0;
+                .pop-up-input {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .kupon-btn {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .checkbox-checkout-wrp {
+        &.checkbox-checkout-delivery {
+            padding-top: 32px;
+        }
+    }
+    .plashka-order {
+        margin-top: 30px;
+        padding: 30px 22px 40px;
+    }
+}

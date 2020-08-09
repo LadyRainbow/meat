@@ -6,6 +6,15 @@
 @import "footer/footer";
 @import "menu/menu";
 @import "main/main";
+@import "stock/stock";
+@import "about/about";
+@import "popup/popup";
+@import "delivery/delivery";
+@import "forgot/forgot";
+@import "lk/lk";
+@import "checkout/checkout";
+@import "checkoutSuccess/checkoutSuccess";
+@import "card/card";
 // @import "policy/policy";
 // @import "sss/sss";
 
@@ -29,7 +38,6 @@ body {
 body.active {
     height: 100%;
     overflow: hidden;
-    position: fixed;
 }
 
 .app {

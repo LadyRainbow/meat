@@ -1,0 +1,369 @@
+<div class="lk-page pb80">
+    <div class="container">
+        <p class="lk-title lk-tab-btn" data-tab="lkGeneral">Личный кабинет</p>
+        <p class="profil-change-success success"><span>Детали учетной записи успешно изменены <img src="../../build/img/success.svg" alt=""></span></p>
+        <div class="lk-content">
+            <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-5 col-12">
+                    <div class="lk-tabs-wrp">
+                        <ul class="lk-tabs">
+                            <li class="lk-tab-btn" data-tab="lkOrders">
+                                <img src="../../build/img/burger-mini.png" alt="">
+                                <p>Заказы</p>
+                            </li>
+                            <li class="lk-tab-btn" data-tab="lkAddress">
+                                <img src="../../build/img/home.png" alt="">
+                                <p>Адреса</p>
+                            </li>
+                            <li class="lk-tab-btn" data-tab="lkProfile">
+                                <img src="../../build/img/smile3.png" alt="">
+                                <p>Учетная запись</p>
+                            </li>
+                            <li class="lk-tab-btn exit" data-tab="lkExit">
+                                <img src="../../build/img/exit.png" alt="">
+                                <p>Выйти</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-9 col-lg-8 col-md-7 col-12">
+                    <div id="lkGeneral" class="lk-body active">
+                        <p class="popup-title">ДОБРО ПОЖАЛОВАТЬ, СЕРГЕЙ</p>
+                        <p>Из главной страницы аккаунта вы можете посмотреть ваши <span class="lk-tab-btn" data-tab="lkOrders">недавние заказы</span>, настроить <span class="lk-tab-btn" data-tab="lkAddress">платежный адрес и адрес доставки</span>, а также изменить <span class="lk-tab-btn" data-tab="lkProfile">пароль и основную информацию.</span></p>
+                    </div>
+                    <div id="lkOrders" class="lk-body">
+                        <p class="popup-title">Заказы</p>
+                        <p class="text-empty">Заказов ещё не создано.</p>
+                        <table>
+                        	<tbody>
+                        		<tr>
+                        			<th>№ заказа</th>
+                        			<th>Дата</th>
+                        			<th>Адрес</th>
+                        			<th>Доставка на имя</th>
+                        			<th>Сумма заказа</th>
+                        			<th></th>
+                        		</tr>
+                        		<tr>
+                        			<td><span class="color-green">00001</span></td>
+                        			<td>01.02.2020</td>
+                        			<td>ул. Валентиновская</td>
+                        			<td>Сергей</td>
+                        			<td>400 грн</td>
+                        			<td><span class="color-green reorder-btn">Перезаказать</span></td>
+                        		</tr>
+                        		<tr>
+                        			<td><span class="color-green">00002</span></td>
+                        			<td>08.02.2020</td>
+                        			<td>ул. Тринклера</td>
+                        			<td>Сергей</td>
+                        			<td>800 грн</td>
+                        			<td><span class="color-green reorder-btn">Перезаказать</span></td>
+                        		</tr>
+                        		<tr>
+                        			<td><span class="color-green">00003</span></td>
+                        			<td>10.02.2020</td>
+                        			<td>ул. Пушкинская</td>
+                        			<td>Сергей</td>
+                        			<td>200 грн</td>
+                        			<td><span class="color-green reorder-btn">Перезаказать</span></td>
+                        		</tr>
+                        		<tr>
+                        			<td><span class="color-green">00004</span></td>
+                        			<td>01.02.2020</td>
+                        			<td>ул. Блюхера</td>
+                        			<td>Дмитрий</td>
+                        			<td>500 грн</td>
+                        			<td><span class="color-green reorder-btn">Перезаказать</span></td>
+                        		</tr>
+                        		<tr>
+                        			<td><span class="color-green">00005</span></td>
+                        			<td>11.02.2020</td>
+                        			<td>ул. Грицевца</td>
+                        			<td>Сергей</td>
+                        			<td>300 грн</td>
+                        			<td><span class="color-green reorder-btn">Перезаказать</span></td>
+                        		</tr>
+                        	</tbody>
+                        </table>
+                    </div>
+                    <div id="lkAddress" class="lk-body">
+                        <div id="savedAddress" class="lk-address-body active">
+                            <p>Следующие адреса будут использованы при оформлении заказов по-умолчанию.</p>
+                            <div class="row">
+                                <div class="col-lg-6 col-12">
+                                    <p class="popup-title">Платёжный адрес</p>
+                                    <ul class="address-info">
+                                        <li>
+                                            <p>Имя</p>
+                                            <p>Сергей</p>
+                                        </li>
+                                        <li>
+                                            <p>Фамилия</p>
+                                            <p>-</p>
+                                        </li>
+                                        <li>
+                                            <p>Улица</p>
+                                            <p>Пушкинская</p>
+                                        </li>
+                                        <li>
+                                            <p> № дома, корпуса</p>
+                                            <p> 101</p>
+                                        </li>
+                                        <li>
+                                            <p>Подъезд </p>
+                                            <p>2</p>
+                                        </li>
+                                        <li>
+                                            <p>№ квартиры</p>
+                                            <p>54</p>
+                                        </li>
+                                        <li>
+                                            <p>Этаж</p>
+                                            <p>2</p>
+                                        </li>
+                                    </ul>
+                                    <div class="redact-address-btn" data-tab="payAddress">Редактировать</div>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <p class="popup-title">Адреса доставки</p>
+                                    <p>Вы еще не настроили этот тип адреса.</p>
+                                    <div class="redact-address-btn" data-tab="homeAddress">Редактировать</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="payAddress" class="lk-address-body">
+                            <p class="popup-title">Платёжный адрес</p>
+                            <form id="valid5" action="#">
+                                <div class="row address-row">
+                                    <div class="col-lg-6 col-12">
+                                        <div class="input-style">
+                                            <p class="input-title">Имя *</p>
+                                            <input class="pop-up-input input-valid" type="text" data-input="name" name="name" value="">
+                                            <div class="input-error-plashka">
+                                                <p class="input-error-title">Ошибка!</p>
+                                                <p class="input-error">Ошибка ввода</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <div class="input-style">
+                                            <p class="input-title">Фамилия *</p>
+                                            <input class="pop-up-input input-valid" type="text" data-input="name" name="name" value="">
+                                            <div class="input-error-plashka">
+                                                <p class="input-error-title">Ошибка!</p>
+                                                <p class="input-error">Ошибка ввода</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <div class="input-style">
+                                            <p class="input-title">Город *</p>
+                                            <input class="pop-up-input input-valid" type="text" data-input="name" name="name" value="">
+                                            <div class="input-error-plashka">
+                                                <p class="input-error-title">Ошибка!</p>
+                                                <p class="input-error">Ошибка ввода</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <div class="input-style">
+                                            <p class="input-title">Улица *</p>
+                                            <input class="pop-up-input input-valid" type="text" data-input="name" name="name" value="">
+                                            <div class="input-error-plashka">
+                                                <p class="input-error-title">Ошибка!</p>
+                                                <p class="input-error">Ошибка ввода</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <div class="input-style">
+                                            <p class="input-title">№ дома *</p>
+                                            <input class="pop-up-input" type="text" data-input="name" name="name" required>
+                                            <div class="input-error-plashka">
+                                                <p class="input-error-title">Ошибка!</p>
+                                                <p class="input-error">Ошибка ввода</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <div class="input-style">
+                                            <p class="input-title">№ квартиры</p>
+                                            <input class="pop-up-input" type="text" data-input="name" name="name">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <input class="redact-address-btn big" data-tab="savedAddress" type="submit" name="" value="Сохранить">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div id="homeAddress" class="lk-address-body">
+                            <p class="popup-title">Адреса доставки</p>
+                            <form id="valid6" action="#">
+                                <div class="row address-row">
+                                    <div class="col-lg-6 col-12">
+                                        <div class="input-style">
+                                            <p class="input-title">Имя *</p>
+                                            <input class="pop-up-input input-valid" type="text" data-input="name" name="name" value="">
+                                            <div class="input-error-plashka">
+                                                <p class="input-error-title">Ошибка!</p>
+                                                <p class="input-error">Ошибка ввода</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <div class="input-style">
+                                            <p class="input-title">Фамилия *</p>
+                                            <input class="pop-up-input input-valid" type="text" data-input="name" name="name" value="">
+                                            <div class="input-error-plashka">
+                                                <p class="input-error-title">Ошибка!</p>
+                                                <p class="input-error">Ошибка ввода</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <div class="input-style">
+                                            <p class="input-title">Город *</p>
+                                            <input class="pop-up-input input-valid" type="text" data-input="name" name="name" value="">
+                                            <div class="input-error-plashka">
+                                                <p class="input-error-title">Ошибка!</p>
+                                                <p class="input-error">Ошибка ввода</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <div class="input-style">
+                                            <p class="input-title">Улица *</p>
+                                            <input class="pop-up-input input-valid" type="text" data-input="name" name="name" value="">
+                                            <div class="input-error-plashka">
+                                                <p class="input-error-title">Ошибка!</p>
+                                                <p class="input-error">Ошибка ввода</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <div class="input-style">
+                                            <p class="input-title">№ дома *</p>
+                                            <input class="pop-up-input" type="text" data-input="name" name="name" required>
+                                            <div class="input-error-plashka">
+                                                <p class="input-error-title">Ошибка!</p>
+                                                <p class="input-error">Ошибка ввода</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <div class="input-style">
+                                            <p class="input-title">№ квартиры</p>
+                                            <input class="pop-up-input" type="text" data-input="name" name="name">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <input class="redact-address-btn big" data-tab="savedAddress" type="submit" name="" value="Сохранить">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- profil -->
+                    <div id="lkProfile" class="lk-body">
+                        <div class="row">
+                            <div class="col-lg-6 col-12">
+                                <p class="popup-title">Учетная запись</p>
+                                <div id="savedProfil"  class="lk-profil-body active">
+                                    <ul class="address-info">
+                                        <li>
+                                            <p>Имя</p>
+                                            <p>Сергей</p>
+                                        </li>
+                                        <li>
+                                            <p>Фамилия</p>
+                                            <p>-</p>
+                                        </li>
+                                        <li>
+                                            <p>E-mail</p>
+                                            <p>unreal2h@gmail.com</p>
+                                        </li>
+                                    </ul>
+                                    <div class="redact-profil-btn" data-tab="changedProfil">Редактировать</div>
+                                </div>
+                                <!-- ??? -->
+                                <div id="changedProfil" class="lk-profil-body">
+                                    <form id="valid8" action="#">
+                                        <div class="input-style">
+                                            <p class="input-title">Имя *</p>
+                                            <input class="pop-up-input input-valid" type="text" data-input="name" name="name" value="">
+                                            <div class="input-error-plashka">
+                                                <p class="input-error-title">Ошибка!</p>
+                                                <p class="input-error">Ошибка ввода</p>
+                                            </div>
+                                        </div>
+                                        <div class="input-style">
+                                            <p class="input-title">Фамилия *</p>
+                                            <input class="pop-up-input input-valid" type="text" data-input="name" name="name" value="">
+                                            <div class="input-error-plashka">
+                                                <p class="input-error-title">Ошибка!</p>
+                                                <p class="input-error">Ошибка ввода</p>
+                                            </div>
+                                        </div>
+                                        <div class="input-style">
+                                            <p class="input-title">E-mail *</p>
+                                            <input class="pop-up-input input-valid" type="email" data-input="email" name="email" value="">
+                                            <div class="input-error-plashka">
+                                                <p class="input-error-title">Ошибка!</p>
+                                                <p class="input-error">Ошибка ввода</p>
+                                            </div>
+                                        </div>
+                                        <input class="redact-profil-btn" data-tab="savedProfil" type="submit" name="" value="Сохранить изменения">
+                                    </form>
+                                </div>
+                                <!-- ??? -->
+                            </div>
+                            <div class="col-lg-6 col-12 changed-pass-block">
+                                <p class="popup-title mt50">смена пароля</p>
+                                <div class="input-style">
+                                    <p class="input-title">Текущий пароль&nbsp;*</p>
+                                    <input class="pop-up-input input-valid password" type="password" data-input="password" name="password" value="">
+                                    <div class="input-error-plashka">
+                                        <p class="input-error-title">Ошибка!</p>
+                                        <p class="input-error">Ошибка ввода</p>
+                                    </div>
+                                    <div class="show-pass">
+                                        <img src="../../build/img/eye.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="input-style">
+                                    <p class="input-title">Новый пароль&nbsp;*</p>
+                                    <input class="pop-up-input input-valid password" type="password" data-input="password" name="password" value="">
+                                    <div class="input-error-plashka">
+                                        <p class="input-error-title">Ошибка!</p>
+                                        <p class="input-error">Ошибка ввода</p>
+                                    </div>
+                                    <div class="show-pass">
+                                        <img src="../../build/img/eye.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="input-style">
+                                    <p class="input-title">Подтвердите новый пароль&nbsp;*</p>
+                                    <input class="pop-up-input input-valid password" type="password" data-input="password" name="password" value="">
+                                    <div class="input-error-plashka">
+                                        <p class="input-error-title">Ошибка!</p>
+                                        <p class="input-error">Ошибка ввода</p>
+                                    </div>
+                                    <div class="show-pass">
+                                        <img src="../../build/img/eye.svg" alt="">
+                                    </div>
+                                </div>
+                                <input class="redact-pass-btn" data-tab="savedPassword" type="submit" name="" value="Сохранить изменения">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="lkExit" class="lk-body">
+                        <p class="popup-title">Вы вышли из кабинета</p>
+                        <p>Вы успешно вышли из своей учётной записи и через 5 секунд будете перенаправлены на главную страницу сайта.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

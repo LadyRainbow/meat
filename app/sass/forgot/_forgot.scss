@@ -1,0 +1,50 @@
+.forgot-page {
+    padding-top: 48px;
+    .popup-btn, .pop-up-input {
+        width: 100%;
+    }
+    .row {
+        & + form {
+            margin-top: 32px;
+        }
+    }
+}
+.newPassSuccess-page {
+    .subtitle-forgot {
+        width: fit-content;
+        position: relative;
+        &::after {
+            content: url('../img/success.svg');
+            position: absolute;
+            right: -30px;
+            bottom: -2px;
+        }
+        & + p {
+            margin-top: 16px;
+            padding-right: 50px;
+        }
+    }
+}
+.subtitle-forgot {
+    font-size: 18px;
+    color: #2E282A;
+    font-family: 'Museo Sans Cyrl 700';
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+@media (max-width: 991px) {
+    .newPassSuccess-page {
+        .subtitle-forgot {
+            & + p {
+                padding-right: 0;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .newPass-page {
+        .mt20 {
+            margin-top: 20px;
+        }
+    }
+}
