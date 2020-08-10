@@ -1,8 +1,7 @@
 .policy {
-    padding-top: 120px;
-    padding-bottom: 30px;
+    padding-top: 40px;
+    padding-bottom: 80px;
     h2 {
-        padding-bottom: 20px;
         text-transform: uppercase;
         font-size: 38px;
         line-height: 49px;
@@ -11,10 +10,6 @@
         font-size: 16px;
         line-height: 24px;
         padding-bottom: 25px;
-    }
-    h3 {
-        padding: 17px 0;
-        font-size: 28px;
     }
     span {
         display: inline-block;
@@ -32,16 +27,14 @@
 }
 @media (max-width: 991px)  {
     .policy  {
-        padding-top: 80px;
+        padding-bottom: 40px;
         h2 {
             font-size: 20px;
             line-height: 29px;
-            padding-bottom: 10px;
+            margin-bottom: 10px;
         }
         h3 {
-            font-size: 18px;
             text-transform: inherit;
-            padding: 5px 0;
         }
     }
 }

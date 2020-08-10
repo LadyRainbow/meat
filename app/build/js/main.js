@@ -188,6 +188,79 @@ $(document).ready(function () {
         $('.kupon-wrp').toggleClass('active');
     });
 
+    // cart summa
+    var summ = 0;
+    $('.cart-price-total span').each(function () {
+        summ += +$(this).text();
+        $('.total-summa span').text(summ.toFixed(2));
+    });
+
+
+    $(".quantity-cart-input").on('input', function () {
+        if($(this).val() == '') {
+            $(this).val(1);
+        };
+        var $thisCart = $(this).closest('.cart-block');
+        var price = $thisCart.find('.cart-price-item span').text();
+        var cartPriceTotal = +price * $(this).val();
+        $thisCart.find('.cart-price-total span').text(cartPriceTotal.toFixed(2));
+        var summ = 0;
+        $('.cart-price-total span').each(function () {
+            summ += +$(this).text();
+            $('.total-summa span').text(summ);
+        });
+    });
+
+    // INPUT CHANGE AMOUNT
+     var $minus = $('.cartMinus');
+     var $plus = $('.cartPlus');
+
+     var $deleteCartBlock = $('.delete-block');
+
+
+      $minus.click(function () {
+           var $amountInput = $(this).parent().children('.quantity-product-input');
+           var count = parseInt($amountInput.val()) - 1;
+           count = count < 1 ? 1 : count;
+           $amountInput.val(count);
+           $amountInput.change();
+           var $thisCart = $(this).closest('.cart-block');
+           var price = $thisCart.find('.cart-price-item span').text();
+           var cartPriceTotal = +price * $thisCart.find('.quantity-product-input').val();
+           $thisCart.find('.cart-price-total span').text(cartPriceTotal.toFixed(2));
+           var summ = 0;
+           $('.cart-price-total span').each(function () {
+               summ += +$(this).text();
+               $('.total-summa span').text(summ.toFixed(2));
+           });
+           return false;
+       });
+       $plus.click(function () {
+           var $amountInput = $(this).parent().children('.quantity-product-input');
+           $amountInput.val(parseInt($amountInput.val()) + 1);
+           $amountInput.change();
+           var $thisCart = $(this).closest('.cart-block');
+           var price = $thisCart.find('.cart-price-item span').text();
+           var cartPriceTotal = +price * $thisCart.find('.quantity-product-input').val();
+           $thisCart.find('.cart-price-total span').text(cartPriceTotal.toFixed(2));
+           var summ = 0;
+           $('.cart-price-total span').each(function () {
+               summ += +$(this).text();
+               $('.total-summa span').text(summ.toFixed(2));
+           });
+           return false;
+       });
+
+       // DELETE CART-BLOCK
+       $deleteCartBlock.click(function () {
+           var $cartBlock = $(this).closest('.cart-block');
+            console.log($cartBlock);
+            $cartBlock.addClass('deleted-cart-block');
+            setTimeout(function() {
+                 $cartBlock.fadeOut();
+            }, 200);
+        });
+
 
     // pop-ups
     function openEnterRegistr () {

@@ -14,10 +14,10 @@
         letter-spacing: 1px;
     }
     .decor-letter {
-        font-family: 'Gilroy-Bold';
         font-size: 200px;
+        line-height: 1.2;
         letter-spacing: 0;
-        color: $orange;
+        color: $green;
         text-shadow: 5px 20px 20px rgba(0, 0, 0, 0.3), -3px 10px 12px rgba(0, 0, 0, 0.25);
         padding: 0;
         position: relative;
@@ -30,12 +30,10 @@
         }
     }
     h2 {
-        font: bold normal 28px/1.2 'Gilroy-Medium';
         margin: 0;
         padding: 20px 0 33px;
     }
     a {
-        font: 300 normal 16px/1.2 'Gilroy-Medium';
         padding-top: 0;
         &:hover {
             color: $orange;
@@ -52,6 +50,7 @@
             width: 100%;
             text-align: center;
             margin-top: 30px;
+            transform: translateX(0);
         }
         .center-block {
             text-align: center;

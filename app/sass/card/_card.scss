@@ -1,0 +1,265 @@
+.card-page-content {
+    padding-top: 32px;
+    border-top: 1px solid rgba(120, 142, 161, 0.24);
+}
+.cart-head {
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(120, 142, 161, 0.12);
+    li {
+        &:first-child {
+            width: 26%;
+        }
+    }
+}
+.cart-block-wrp {
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(120, 142, 161, 0.12);
+    margin-bottom: 24px;
+}
+.cart-block {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #2E282A;
+}
+.cart-info {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+        .cart-name {
+            color: #75C154;
+        }
+    }
+}
+.cart-name {
+    width: 150px;
+    transition: .2s;
+}
+.cart-img {
+    width: 164px;
+    height: 88px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-left: 16px;
+    margin-right: 24px;
+    flex-shrink: 0;
+    img {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+    }
+}
+.delete-block {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 0.5px solid rgba(120, 142, 161, 0.24);
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    img {
+        width: 20px;
+    }
+    &:hover {
+        img {
+            filter: brightness(0) saturate(100%) invert(42%) sepia(13%) saturate(3497%) hue-rotate(332deg) brightness(101%) contrast(100%);
+        }
+    }
+    &.mob {
+        display: none;
+    }
+}
+
+.quantity-cart {
+    display: flex;
+    align-items: center;
+    width: 144px;
+    height: 48px;
+    justify-content: space-between;
+    border: 0.5px solid rgba(120, 142, 161, 0.24);
+    border-radius: 24px;
+    input {
+        width: 40px;
+        text-align: center;
+        background-color: #F7FAFC;
+    }
+}
+.cart-price {
+    min-width: 120px;
+    &.cart-price-total {
+        text-align: right;
+    }
+}
+.quantity-btn {
+    flex-shrink: 0;
+    position: relative;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 0.5px solid rgba(120, 142, 161, 0.24);
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s;
+    cursor: pointer;
+    span {
+        transition: .2s;
+        display: block;
+        width: 14px;
+        height: 2px;
+        background-color: #788EA1;
+    }
+    &.cartPlus {
+        &::after {
+            transition: .2s;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -7px;
+            margin-left: -1px;
+            content: '';
+            height: 14px;
+            width: 2px;
+            background-color: #788EA1;
+        }
+        &:hover {
+            &::after {
+                background-color: #fff;
+            }
+        }
+    }
+    &:hover {
+        background-color: #75C154;
+        span {
+            background-color: #fff;
+        }
+    }
+}
+.total-block {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.total-summa {
+    color: #2E282A;
+    margin-left: 32px;
+}
+.cart-big-btns {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cart-renew-btn {
+    cursor: pointer;
+    width: 256px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #75C154;
+    border: 2px solid rgba(117, 193, 84, 0.8);
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.01);
+    transition: .2s;
+    font-family: 'Museo Sans Cyrl 700';
+    &:hover {
+        background-color: #75C154;
+        color: #fff;
+    }
+}
+.cart-checkout-btn {
+    @extend %BTN;
+    width: 256px;
+}
+
+@media (max-width: 1199px) {
+    .cart-head li:first-child {
+        width: 33%;
+    }
+}
+@media (max-width: 991px) {
+    .cart-head {
+        display: none;
+    }
+    .cart-block {
+        margin-bottom: 30px;
+        flex-direction: column;
+        .flex-vertical {
+            width: 100%;
+        }
+        & + .cart-block {
+            border-top: 0.5px solid rgba(120, 142, 161, 0.24);
+            padding-top: 20px;
+        }
+    }
+    .delete-block {
+        &.desc {
+            display: none;
+        }
+        &.mob {
+            display: flex;
+            width: 100%;
+            border-radius: 6px;
+            margin-top: 15px;
+        }
+    }
+    .cart-info {
+        margin-bottom: 10px;
+    }
+    .cart-img {
+        margin-left: 0;
+        height: 150px;
+        width: 50%;
+    }
+    .quantity-cart {
+        margin: 5px 0 15px;
+    }
+    .cart-price {
+        width: 100%;
+        &.cart-price-total {
+            text-align: center;
+            font-family: 'Museo Sans Cyrl 700';
+            font-size: 18px;
+        }
+    }
+    .quantity-btn {
+        &.cartPlus {
+            &:hover {
+                &::after {
+                    background-color: #788EA1;
+                }
+            }
+        }
+        &:hover {
+            background-color: #fff;
+            span {
+                background-color: #788EA1;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .cart-big-btns {
+        display: block;
+        * {
+            width: 100%;
+        }
+    }
+    .cart-checkout-btn {
+        margin-top: 20px;
+    }
+}
