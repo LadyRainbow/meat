@@ -506,6 +506,7 @@ header {
     margin-left: 32px; }
 
 .krugal {
+  position: relative;
   width: 48px;
   height: 48px;
   display: -webkit-box;
@@ -526,6 +527,22 @@ header {
   -webkit-transition: .2s;
   -o-transition: .2s;
   transition: .2s; }
+
+.count-item-cart {
+  position: absolute;
+  text-align: center;
+  top: -6px;
+  left: 34px;
+  padding: 0 6px;
+  height: 20px;
+  min-width: 20px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #E4582C;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  font-family: 'Museo Sans Cyrl 700'; }
 
 .header-tel .krugal {
   margin-right: 8px; }
@@ -610,7 +627,11 @@ header {
       header .header-icons li:first-child {
         display: none; }
       header .header-icons li + li {
-        margin-left: 0; } }
+        margin-left: 0; }
+  .count-item-cart {
+    top: -3px;
+    left: 22px;
+    font-size: 12px; } }
 
 footer {
   background-color: #fff; }
