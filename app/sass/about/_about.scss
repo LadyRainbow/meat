@@ -12,17 +12,40 @@
     padding: 10px 35px 40px;
     z-index: 2;
     width: calc(55% - 130px);
+    overflow: hidden;
     background-color: #F7FAFC;
     p {
         color: #2E282A;
         margin-bottom: 15px;
     }
 }
-.about-new-title {
-    span {
-        opacity: 0;
+.shtorka {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    bottom: 40px;
+    background-color: lighten(#75C154, 25%);
+    background: #F7FAFC;
+    transform: translateX(120%);
+    transition: .3s linear;
+    &.zanaves {
+        transform: translateX(0%);
     }
 }
+.new-text-wrp {
+    // height: 0;
+    // overflow: hidden;
+    // opacity: 0;
+    display: none;
+    transition: opacity 1s .1s;
+    &.active {
+        // height: auto;
+        // opacity: 1;
+        display: block;
+    }
+}
+
 .link-to-catalog {
     color: #75C154;
     font-family: 'Museo Sans Cyrl 700';
@@ -39,10 +62,10 @@
     z-index: 1;
     top: 50%;
     left: 50%;
-    height: calc(100vh - 200px);
-    width: calc(100vh - 200px);
-    margin-top:  calc((50vh - 100px) * -1);
-    margin-left:  calc((50vh - 100px) * -1);
+    height: calc(90vh - 200px);
+    width: calc(90vh - 200px);
+    margin-top:  calc((45vh - 100px) * -1);
+    margin-left:  calc((45vh - 100px) * -1);
     border: 1px solid #75C154;
     border-radius: 50%;
     // animation: rotateHover 1s linear  infinite;
@@ -90,29 +113,29 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     background-color: #F7FAFC;
     &-top {
-        top: -50px;
+        top: -60px;
         left: 50%;
-        margin-left: -50px;
+        margin-left: -60px;
     }
     &-left {
-        left: -50px;
+        left: -60px;
         top: 50%;
-        margin-top: -50px;
+        margin-top: -60px;
     }
     &-right {
-        right: -50px;
+        right: -60px;
         top: 50%;
-        margin-top: -50px;
+        margin-top: -60px;
     }
     &-bottom {
-        bottom: -50px;
+        bottom: -60px;
         left: 50%;
-        margin-left: -50px;
+        margin-left: -60px;
     }
 }
 .new-icon {
@@ -122,19 +145,19 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    width: 56px;
-    height: 56px;
+    width: 86px;
+    height: 86px;
     border: 1px solid #75C154;
     transition: .2s;
     &::before {
         content: '';
-        width: 66px;
-        height: 66px;
+        width: calc(100% + 10px);
+        height: calc(100% + 10px);
         border-radius: 50%;
         border: 1px dashed #75C154;
         position: absolute;
-        top: -6px;
-        left: -6px;
+        top: -5px;
+        left: -5px;
 
     }
     img {
@@ -153,6 +176,7 @@
         }
     }
 }
+
 @keyframes rotateHover {
     from {
         transform: rotate(0);
