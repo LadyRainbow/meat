@@ -11,7 +11,7 @@
     position: relative;
     padding: 10px 35px 40px;
     z-index: 2;
-    width: calc(50% - 130px);
+    width: calc(55% - 130px);
     background-color: #F7FAFC;
     p {
         color: #2E282A;
@@ -31,12 +31,12 @@
     z-index: 1;
     top: 50%;
     left: 50%;
-    margin-top:  calc((50vh - 80px) * -1);
-    margin-left:  calc((50vh - 80px) * -1);
+    margin-top:  calc((45vh - 80px) * -1);
+    margin-left:  calc((45vh - 80px) * -1);
     border: 1px solid #75C154;
     border-radius: 50%;
-    height: calc(100vh - 160px);
-    width: calc(100vh - 160px);
+    height: calc(90vh - 160px);
+    width: calc(90vh - 160px);
 }
 .new-icon-wrp {
     position: absolute;
@@ -47,16 +47,48 @@
     height: 100px;
     border-radius: 50%;
     background-color: #F7FAFC;
+    &-top {
+        top: -50px;
+        left: 50%;
+        margin-left: -50px;
+    }
+    &-left {
+        left: -50px;
+        top: 50%;
+        margin-top: -50px;
+    }
+    &-right {
+        right: -50px;
+        top: 50%;
+        margin-top: -50px;
+    }
+    &-bottom {
+        bottom: -50px;
+        left: 50%;
+        margin-left: -50px;
+    }
 }
 .new-icon {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    width: 76px;
-    height: 76px;
+    width: 54px;
+    height: 54px;
     background-color: #75C154;
     border: 1px solid #75C154;
+    &::before {
+        content: '';
+        width: 66px;
+        height: 66px;
+        // background-color: red;
+        border-radius: 50%;
+        border: 1px dashed #75C154;
+        position: absolute;
+        top: -7px;
+        left: -7px;
+    }
 }
 .about-main {
     padding: 75px 0 161px;
