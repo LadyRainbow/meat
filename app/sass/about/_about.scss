@@ -31,12 +31,13 @@
     z-index: 1;
     top: 50%;
     left: 50%;
-    margin-top:  calc((45vh - 80px) * -1);
-    margin-left:  calc((45vh - 80px) * -1);
+    height: calc(100vh - 200px);
+    width: calc(100vh - 200px);
+    margin-top:  calc((50vh - 100px) * -1);
+    margin-left:  calc((50vh - 100px) * -1);
     border: 1px solid #75C154;
     border-radius: 50%;
-    height: calc(90vh - 160px);
-    width: calc(90vh - 160px);
+    // animation: rotateHover 1s linear  infinite;
 }
 .new-icon-wrp {
     position: absolute;
@@ -69,6 +70,7 @@
     }
 }
 .new-icon {
+    cursor: pointer;
     position: relative;
     display: flex;
     align-items: center;
@@ -87,12 +89,24 @@
         position: absolute;
         top: -6px;
         left: -6px;
+
     }
     img {
         width: 60%;
         filter: brightness(0) saturate(100%) invert(74%) sepia(9%) saturate(2438%) hue-rotate(57deg) brightness(92%) contrast(84%);
-
-
+    }
+    &:hover {
+        &::before {
+            animation: rotateHover .2s linear  infinite;
+        }
+    }
+}
+@keyframes rotateHover {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(180deg);
     }
 }
 .about-main {

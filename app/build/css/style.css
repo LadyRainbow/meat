@@ -1464,17 +1464,17 @@ footer {
   z-index: 1;
   top: 50%;
   left: 50%;
-  margin-top: -webkit-calc((45vh - 80px) * -1);
-  margin-top: calc((45vh - 80px) * -1);
-  margin-left: -webkit-calc((45vh - 80px) * -1);
-  margin-left: calc((45vh - 80px) * -1);
+  height: -webkit-calc(100vh - 200px);
+  height: calc(100vh - 200px);
+  width: -webkit-calc(100vh - 200px);
+  width: calc(100vh - 200px);
+  margin-top: -webkit-calc((50vh - 100px) * -1);
+  margin-top: calc((50vh - 100px) * -1);
+  margin-left: -webkit-calc((50vh - 100px) * -1);
+  margin-left: calc((50vh - 100px) * -1);
   border: 1px solid #75C154;
   -webkit-border-radius: 50%;
-          border-radius: 50%;
-  height: -webkit-calc(90vh - 160px);
-  height: calc(90vh - 160px);
-  width: -webkit-calc(90vh - 160px);
-  width: calc(90vh - 160px); }
+          border-radius: 50%; }
 
 .new-icon-wrp {
   position: absolute;
@@ -1513,6 +1513,7 @@ footer {
     margin-left: -50px; }
 
 .new-icon {
+  cursor: pointer;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1545,6 +1546,25 @@ footer {
     width: 60%;
     -webkit-filter: brightness(0) saturate(100%) invert(74%) sepia(9%) saturate(2438%) hue-rotate(57deg) brightness(92%) contrast(84%);
             filter: brightness(0) saturate(100%) invert(74%) sepia(9%) saturate(2438%) hue-rotate(57deg) brightness(92%) contrast(84%); }
+  .new-icon:hover::before {
+    -webkit-animation: rotateHover .2s linear  infinite;
+            animation: rotateHover .2s linear  infinite; }
+
+@-webkit-keyframes rotateHover {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  to {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); } }
+
+@keyframes rotateHover {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  to {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); } }
 
 .about-main {
   padding: 75px 0 161px;
