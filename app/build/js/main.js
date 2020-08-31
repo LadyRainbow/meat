@@ -41,16 +41,17 @@ $(document).ready(function () {
     // about animation
     // start animation
     setTimeout(function () {
+        $('.new-icon-wrp').removeClass('trans');
         $('.new-icon').removeClass('scale');
         $('.big-circle').addClass('next');
-    }, 900);
+    }, 1100);
     setTimeout(function () {
         $('.real').removeClass('next');
     }, 1200);
     setTimeout(function () {
         $('.about-new-main-content').removeClass('opacity');
         $('.shtorka').removeClass('zanaves');
-    }, 1320);
+    }, 1380);
 
 
 

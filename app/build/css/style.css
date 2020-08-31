@@ -1422,26 +1422,28 @@ footer {
   .stock-text {
     margin-top: 18px; } }
 
-.about-new-main .container {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  height: -webkit-calc((var(--vh, 1vh) * 100) - 88px);
-  height: calc((var(--vh, 1vh) * 100) - 88px); }
-
-.about-new-main h2 {
-  font-size: 36px;
-  line-height: 1.2; }
+.about-new-main {
+  position: relative; }
+  .about-new-main .container {
+    z-index: 2;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    height: -webkit-calc((var(--vh, 1vh) * 100) - 88px);
+    height: calc((var(--vh, 1vh) * 100) - 88px); }
+  .about-new-main h2 {
+    font-size: 36px;
+    line-height: 1.2; }
 
 .about-new-main-content {
   position: relative;
@@ -1450,12 +1452,21 @@ footer {
   width: -webkit-calc(55% - 130px);
   width: calc(55% - 130px);
   overflow: hidden;
-  background-color: #F7FAFC; }
+  background-color: #ffffff; }
   .about-new-main-content p {
     color: #2E282A;
     margin-bottom: 15px; }
   .about-new-main-content.opacity {
     opacity: 0; }
+
+.white-bg {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  background-color: #fff; }
 
 .shtorka {
   position: absolute;
@@ -1463,7 +1474,7 @@ footer {
   left: 0;
   width: 100%;
   bottom: 40px;
-  background: #F7FAFC;
+  background: #ffffff;
   -webkit-transform: translateX(120%);
       -ms-transform: translateX(120%);
           transform: translateX(120%);
@@ -1643,6 +1654,19 @@ footer {
     top: -60px;
     left: 50%;
     margin-left: -60px; }
+    .new-icon-wrp-top:after {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 50%;
+      background-color: #fff;
+      opacity: 1;
+      -webkit-transition: opacity .3s .2s;
+      -o-transition: opacity .3s .2s;
+      transition: opacity .3s .2s; }
   .new-icon-wrp-left {
     left: -60px;
     top: 50%;
@@ -1651,14 +1675,45 @@ footer {
     right: -60px;
     top: 50%;
     margin-top: -60px; }
+    .new-icon-wrp-right:after {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #fff;
+      opacity: 1;
+      -webkit-transition: opacity .3s .2s;
+      -o-transition: opacity .3s .2s;
+      transition: opacity .3s .2s; }
   .new-icon-wrp-bottom {
     bottom: -60px;
     left: 50%;
     margin-left: -60px; }
+    .new-icon-wrp-bottom:after {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 50%;
+      background-color: #fff;
+      opacity: 1;
+      -webkit-transition: opacity .3s .2s;
+      -o-transition: opacity .3s .2s;
+      transition: opacity .3s .2s; }
+  .new-icon-wrp.trans {
+    background-color: rgba(255, 255, 255, 0.01); }
+    .new-icon-wrp.trans:after {
+      opacity: 0; }
 
 .new-icon {
   cursor: pointer;
   position: relative;
+  z-index: 2;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1831,6 +1886,9 @@ footer {
 
 .meat-row {
   margin-bottom: 70px; }
+
+.about-second {
+  padding-top: 80px; }
 
 @media (min-width: 992px) {
   .meat-row .col-lg-7 {
@@ -2078,8 +2136,7 @@ footer {
     height: -webkit-calc(100vw - 100px);
     height: calc(100vw - 100px); }
   .about-new-main {
-    padding-top: 90px;
-    padding-bottom: 40px; }
+    padding-top: 90px; }
     .about-new-main h2 {
       font-size: 30px;
       margin-bottom: 10px; }
@@ -2096,8 +2153,11 @@ footer {
               align-items: center; }
   .about-new-main-content {
     margin-top: 60px;
-    width: 100%;
-    padding: 10px 0px 40px; } }
+    margin-right: -15px;
+    margin-left: -15px;
+    width: -webkit-calc(100% + 30px);
+    width: calc(100% + 30px);
+    padding: 30px 15px 60px; } }
 
 @media (max-width: 991px) {
   .about-main .leaf1 {
