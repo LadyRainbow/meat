@@ -74,20 +74,25 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    width: 54px;
-    height: 54px;
-    background-color: #75C154;
+    width: 56px;
+    height: 56px;
+    // background-color: #75C154;
     border: 1px solid #75C154;
     &::before {
         content: '';
         width: 66px;
         height: 66px;
-        // background-color: red;
         border-radius: 50%;
         border: 1px dashed #75C154;
         position: absolute;
-        top: -7px;
-        left: -7px;
+        top: -6px;
+        left: -6px;
+    }
+    img {
+        width: 60%;
+        filter: brightness(0) saturate(100%) invert(74%) sepia(9%) saturate(2438%) hue-rotate(57deg) brightness(92%) contrast(84%);
+
+
     }
 }
 .about-main {
