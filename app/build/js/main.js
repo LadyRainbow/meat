@@ -38,6 +38,37 @@ $(document).ready(function () {
         ]
     });
 
+    // about animation
+    // title animation
+    function showTitleRow1 () {
+        $('.about-new-title span').each(function(){
+          let elem = $(this);
+          elem.html(elem.text().replace(/([^\x00-\x80]|\w|\.)/g, "<span>$&</span>"))
+        })
+        let span = $('.about-new-title span')
+        let spanArray = span.toArray()
+        // let text = $('.text')
+        spanArray.sort(function() { return 0.5-Math.random() })
+        // Set tweens
+        TweenMax.set(span, {
+          alpha: 0,
+          x: 100
+        })
+        // Tween values
+        var tl = new TimelineMax({
+          repeat: 0
+        })
+        tl.add(
+          TweenMax.staggerTo(span, .55, {
+            alpha: 1,
+            x: -5,
+          }, 0.04),
+          "start"
+        )
+    };
+
+    showTitleRow1 ();
+
     // 2 block tabs
     $('.carte-tabs li').click(function () {
         $('.carte-tabs li').removeClass('active');

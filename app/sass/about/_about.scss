@@ -18,6 +18,11 @@
         margin-bottom: 15px;
     }
 }
+.about-new-title {
+    span {
+        opacity: 0;
+    }
+}
 .link-to-catalog {
     color: #75C154;
     font-family: 'Museo Sans Cyrl 700';
@@ -27,6 +32,9 @@
     }
 }
 .big-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     z-index: 1;
     top: 50%;

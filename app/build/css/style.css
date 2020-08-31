@@ -1450,6 +1450,9 @@ footer {
     color: #2E282A;
     margin-bottom: 15px; }
 
+.about-new-title span {
+  opacity: 0; }
+
 .link-to-catalog {
   color: #75C154;
   font-family: 'Museo Sans Cyrl 700';
@@ -1460,6 +1463,18 @@ footer {
     color: #67b943; }
 
 .big-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute;
   z-index: 1;
   top: 50%;
