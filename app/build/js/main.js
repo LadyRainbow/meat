@@ -40,7 +40,19 @@ $(document).ready(function () {
 
     // about animation
     // start animation
-    
+    setTimeout(function () {
+        $('.new-icon').removeClass('scale');
+        $('.big-circle').addClass('next');
+    }, 900);
+    setTimeout(function () {
+        $('.real').removeClass('next');
+    }, 1200);
+    setTimeout(function () {
+        $('.about-new-main-content').removeClass('opacity');
+        $('.shtorka').removeClass('zanaves');
+    }, 1320);
+
+
 
     // logic animation
     var centerImg = $('.real').attr('src');
