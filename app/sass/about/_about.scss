@@ -9,10 +9,22 @@
 }
 .about-new-main-content {
     position: relative;
+    padding: 10px 35px 40px;
     z-index: 2;
-    width: calc(50% - 160px);
+    width: calc(50% - 130px);
     background-color: #F7FAFC;
-    padding-bottom: 40px;
+    p {
+        color: #2E282A;
+        margin-bottom: 15px;
+    }
+}
+.link-to-catalog {
+    color: #75C154;
+    font-family: 'Museo Sans Cyrl 700';
+    transition: .2s;
+    &:hover {
+        color: darken(#75C154, 5%);
+    }
 }
 .big-content {
     position: absolute;

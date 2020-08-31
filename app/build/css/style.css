@@ -1441,11 +1441,23 @@ footer {
 
 .about-new-main-content {
   position: relative;
+  padding: 10px 35px 40px;
   z-index: 2;
-  width: -webkit-calc(50% - 160px);
-  width: calc(50% - 160px);
-  background-color: #F7FAFC;
-  padding-bottom: 40px; }
+  width: -webkit-calc(50% - 130px);
+  width: calc(50% - 130px);
+  background-color: #F7FAFC; }
+  .about-new-main-content p {
+    color: #2E282A;
+    margin-bottom: 15px; }
+
+.link-to-catalog {
+  color: #75C154;
+  font-family: 'Museo Sans Cyrl 700';
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s; }
+  .link-to-catalog:hover {
+    color: #67b943; }
 
 .big-content {
   position: absolute;
