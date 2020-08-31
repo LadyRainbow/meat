@@ -69,6 +69,18 @@ $(document).ready(function () {
 
     showTitleRow1 ();
 
+    $('.new-icon').click(function () {
+        $('.new-icon').removeClass('active');
+        $(this).addClass('active');
+        var img = $(this).find('img').attr('src');
+        $('.real').addClass('next');
+        setTimeout(function () {
+            $('.real').removeClass('next');
+            $('.real').attr('src', img);
+        }, 300);
+
+    })
+
     // 2 block tabs
     $('.carte-tabs li').click(function () {
         $('.carte-tabs li').removeClass('active');
