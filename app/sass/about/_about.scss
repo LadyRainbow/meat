@@ -1,3 +1,32 @@
+.about-new-main {
+    .container {
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        height: calc((var(--vh, 1vh) * 100) - 88px);
+    }
+}
+.about-new-main-content {
+    position: relative;
+    z-index: 2;
+    width: calc(50% - 160px);
+    background-color: #F7FAFC;
+    padding-bottom: 40px;
+}
+.big-content {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    margin-top:  calc((50vh - 80px) * -1);
+    margin-left:  calc((50vh - 80px) * -1);
+    border: 1px solid #75C154;
+    border-radius: 50%;
+    height: calc(100vh - 160px);
+    width: calc(100vh - 160px);
+}
+
 .about-main {
     padding: 75px 0 161px;
     position: relative;
