@@ -44,14 +44,25 @@ $(document).ready(function () {
         $('.new-icon-wrp').removeClass('trans');
         $('.new-icon').removeClass('scale');
         $('.big-circle').addClass('next');
-    }, 1100);
+    }, 300);
     setTimeout(function () {
         $('.real').removeClass('next');
-    }, 1200);
+    }, 500);
     setTimeout(function () {
         $('.about-new-main-content').removeClass('opacity');
         $('.shtorka').removeClass('zanaves');
-    }, 1380);
+        $('.palka').removeClass('opacity');
+    }, 600);
+
+    // parallax
+    if (windowWidth > 767) {
+        $('.parallax-el').each(function (index, value) {
+            var parallaxEl = $(this).attr('id', 'scene' + index);
+            var scene = document.getElementById('scene' + index);
+            var parallaxInstance = new Parallax(scene);
+        });
+    }
+    // parallax end
 
 
 
@@ -66,6 +77,7 @@ $(document).ready(function () {
         var textBlockId = $(this).attr('data-part');
         $('.shtorka').addClass('zanaves');
         $('.real').addClass('next');
+        $('.palka').addClass('opacity');
         setTimeout(function () {
             $('.real').removeClass('next');
             $('.real').attr('src', img);
@@ -90,6 +102,7 @@ $(document).ready(function () {
         }, 300);
         setTimeout(function () {
             $('.shtorka').removeClass('zanaves');
+            $('.palka').removeClass('opacity');
         }, 400);
     });
 
